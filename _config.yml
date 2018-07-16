@@ -4,18 +4,23 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            'Sachin Malhotra'
+tagline:          '#include<code>'
+description:      'Programming made fun'
+url:              https://edorado.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Sachin Malhotra'
+  url:            https://twitter.com/edorado93
+  gravatar_md5:   e51882718aefa4b1acf0f59ab2edc916
+  github:         edorado93
+  linkedin:       edorado93
+  medium:         sachinmalhotra
+  instagram:      edorado93
+  twitter:        edorado93
 
 paginate:         5
 
@@ -23,4 +28,8 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://edorado.github.io
+
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
