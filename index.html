@@ -13,8 +13,16 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+  
+    {% assign desc = post.content | split: '</p>' %}
+    {{ desc[0] }}
+    <br>
+    <a href="{{ post.url }}">
+         Read More...
+    </a>
+    <hr>
+    <!--{{ desc[0] | append: '  ' | append: desc[1] }}-->
+    <!--{{ post.content }}-->
   </div>
   {% endfor %}
 </div>

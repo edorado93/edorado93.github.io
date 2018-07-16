@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem &middot; Hyde
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="/">
+          Hyde
+        </a>
+      </h1>
+      <p class="lead">A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+
+      <a class="sidebar-nav-item" href="https://github.com/poole/hyde/archive/v2.1.0.zip">Download</a>
+      <a class="sidebar-nav-item" href="https://github.com/poole/hyde">GitHub project</a>
+      <span class="sidebar-nav-item">Currently v2.1.0</span>
+    </nav>
+
+    <p>&copy; 2018. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem</h1>
+  <span class="post-date">19 Dec 2017</span>
+  <!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 100%;
+        margin: auto;
+      }
+      section {
+        width: 100%;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 100%;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+This problem statement was an assignment as a part of my coursework for the Masters program at USC. I had loads of fun while solving it and…
+</section>
+<section data-field="body" class="e-content">
+<section name="4156" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8ce7" id="8ce7" class="graf graf--h3 graf--leading graf--title"></h3></div><div class="section-inner sectionLayout--fullWidth"><figure name="cf9b" id="cf9b" class="graf graf--figure graf--layoutFillWidth graf-after--h3"><div class="aspectRatioPlaceholder is-locked"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 100.4%;"></div><img class="graf-image" data-image-id="1*3i2Y2ipYM-aQ_0VSeQ9eoQ.png" data-width="1452" data-height="1458" data-is-featured="true" src="https://cdn-images-1.medium.com/max/2000/1*3i2Y2ipYM-aQ_0VSeQ9eoQ.png"></div><figcaption class="imageCaption"><a href="http://www.csplib.org/Problems/prob079/assets/nqc1850sol2.png" data-href="http://www.csplib.org/Problems/prob079/assets/nqc1850sol2.png" class="markup--anchor markup--figure-anchor" rel="nofollow noopener" target="_blank">http://www.csplib.org/Problems/prob079/assets/nqc1850sol2.png</a></figcaption></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="2538" id="2538" class="graf graf--p graf-after--figure">This problem statement was an assignment as a part of my coursework for the Masters program at USC. I had loads of fun while solving it and I decided to share my learnings with the community.</p><p name="cf4a" id="cf4a" class="graf graf--p graf-after--p">Let’s start with the problem statement.</p><h3 name="1ae1" id="1ae1" class="graf graf--h3 graf-after--p">The Problem</h3><p name="5f14" id="5f14" class="graf graf--p graf-after--h3">You are a zookeeper in the reptile house. One of your rare lizards has just had several babies. Your job is to find a place to put each baby lizard in a nursery. However, there is a catch: the baby lizards have very long tongues.</p><p name="26be" id="26be" class="graf graf--p graf-after--p">A baby lizard can shoot out its tongue and eat any other baby lizard before you have time to save it. As such, you want to make sure that no baby lizard can eat another baby lizard in the nursery (burp).</p><p name="ca18" id="ca18" class="graf graf--p graf-after--p">For each baby lizard, you can place them in one spot on a grid. <strong class="markup--strong markup--p-strong">From there, they can shoot out their tongue up, down, left, right and diagonally as well.</strong> Their tongues are very long and can reach to the edge of the nursery from any location.</p><p name="044e" id="044e" class="graf graf--p graf-after--p">Figure 1 shows in what ways a baby lizard can eat another.</p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="866d" id="866d" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 462px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 46.2%;"></div><img class="graf-image" data-image-id="1*_iiDKlitAjMADtVqlQyapA.png" data-width="1196" data-height="552" src="https://cdn-images-1.medium.com/max/1000/1*_iiDKlitAjMADtVqlQyapA.png"></div><figcaption class="imageCaption">Figure 1 (A) the baby lizard can attack any other lizard in a red square. Thus it can be seen that a baby lizard can eat another lizard to its top, bottom, left right or diagonal. (B) In this example setup, both lizards can eat each other. Your algorithm will try to avoid this.</figcaption></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="e2fe" id="e2fe" class="graf graf--p graf-after--figure">In addition to baby lizards, your nursery may have some trees planted in it. Your lizards cannot shoot their tongues through the trees nor can you move a lizard into the same place as a tree.</p><p name="f0c9" id="f0c9" class="graf graf--p graf-after--p">As such, a tree will block any lizard from eating another lizard if it is in the path. Additionally, the tree will block you from moving the lizard to that location.</p><p name="99dc" id="99dc" class="graf graf--p graf-after--p">Figure 2 shows some different valid arrangements of lizards:</p></div><div class="section-inner sectionLayout--outsetColumn"><figure name="2ec6" id="2ec6" class="graf graf--figure graf--layoutOutsetCenter graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 1000px; max-height: 455px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 45.5%;"></div><img class="graf-image" data-image-id="1*FBI0AkIOTLeN2EASiZ25Zw.png" data-width="1208" data-height="550" src="https://cdn-images-1.medium.com/max/1000/1*FBI0AkIOTLeN2EASiZ25Zw.png"></div><figcaption class="imageCaption">Figure 2 Both nurseries have valid arrangements of baby lizards such that they cannot eat one <br>another. (A) with no trees, no lizard is in a position to eat another lizard. (B) Two trees are <br>introduced such that the lizard in the last column cannot eat the lizard in the second or fourth <br>column.</figcaption></figure></div><div class="section-inner sectionLayout--insetColumn"><p name="5832" id="5832" class="graf graf--p graf-after--figure">Given an arrangement of trees, we need to output a new arrangement of lizards such that no baby lizard can eat another one. You cannot move any of the trees.</p><p name="a4b4" id="a4b4" class="graf graf--p graf-after--p">You can find the entire code for this <a href="https://github.com/edorado93/Save-The-Lizards" data-href="https://github.com/edorado93/Save-The-Lizards" class="markup--anchor markup--p-anchor" rel="noopener nofollow nofollow noopener" target="_blank">here</a>.</p><h3 name="6321" id="6321" class="graf graf--h3 graf-after--p">Similarity to N-Queens</h3><p name="aac3" id="aac3" class="graf graf--p graf-after--h3">This problem is very similar to the classic <a href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" data-href="https://en.wikipedia.org/wiki/Eight_queens_puzzle" class="markup--anchor markup--p-anchor" rel="nofollow noopener noopener" target="_blank">N-Queens Problem</a>. Let’s recap some of the constraints in the N-Queens problem.</p><ul class="postList"><li name="1f43" id="1f43" class="graf graf--li graf-after--p">There can be only one queen per row and column.</li><li name="1fcf" id="1fcf" class="graf graf--li graf-after--li">There can be only one queen per diagonal and anti-diagonal.</li><li name="5b22" id="5b22" class="graf graf--li graf-after--li">Considering the above 2 constraints, we cannot place more queens than the number of rows or number of columns.</li></ul><p name="cf47" id="cf47" class="graf graf--p graf-after--li">Now, we add in a little twist which says that we have trees at certain location in the nursery (read chess board), and the queens (lizards) on either side of a tree cannot attack each other. This changes things big time.</p><ul class="postList"><li name="20af" id="20af" class="graf graf--li graf-after--p">Now, we can have multiple lizards per row, per column.</li><li name="27c8" id="27c8" class="graf graf--li graf-after--li">Similarly, we can have multiple lizards in a single diagonal or anti-diagonal.</li><li name="00b4" id="00b4" class="graf graf--li graf-after--li">We can place more number of lizards than the number of rows or columns.</li></ul><p name="526d" id="526d" class="graf graf--p graf-after--li">Although the problem looks very similar to the standard puzzle of placing N queens on an N*N board, the solution and the complexity turn out to be very different altogether.</p><p name="af30" id="af30" class="graf graf--p graf-after--p">None of the optimized versions of N-Queens fit in directly for this problem because a lot of the optimizations rely on the simple fact that a solution to the N-Queens problems can be represented as a permutation of column subscripts, simply because we have only one lizard per row, column, diagonal and anti-diagonal. We break this assumption, and the optimizations fall apart.</p><p name="e2cf" id="e2cf" class="graf graf--p graf-after--p">So here in this post, we will discuss a highly optimized backtracking based solution.</p><h3 name="6b34" id="6b34" class="graf graf--h3 graf-after--p">Backtracking++</h3><p name="c1fa" id="c1fa" class="graf graf--p graf-after--h3">The backtracking solution for this problem works in a similar manner to the backtracking solution for the standard N-Queens problem.</p><p name="ced6" id="ced6" class="graf graf--p graf-after--p">The solution for this problem is based on the following idea.</p><p name="db35" id="db35" class="graf graf--p graf-after--p">Given a cell <code class="markup--code markup--p-code">[i, j]</code>, we can either place a lizard, or not place a lizard. Any one of our choices can lead to a solution. So we try both.</p><p name="754e" id="754e" class="graf graf--p graf-after--p">The biggest invariant in this algorithm is that we always move from left to right across the board.</p><p name="25d2" id="25d2" class="graf graf--p graf-after--p">Suppose there is a tree at location [3,4]. Its masking effect (if any) would only be visible once we cross the cell [3,4] in our recursion and move forward. Not before that.</p><p name="bbe9" id="bbe9" class="graf graf--p graf-after--p">Before we get to the actual pseudocode for the problem, there are some other components of the algorithm that I would like to explain. This would make the understanding of the pseudocode much simpler.</p><h3 name="e895" id="e895" class="graf graf--h3 graf-after--p">The Safety Check and the O(1) conundrum</h3><p name="a83c" id="a83c" class="graf graf--p graf-after--h3">If you’ve taken a look at <a href="https://medium.freecodecamp.org/lets-backtrack-and-save-some-queens-1f9ef6af5415" data-href="https://medium.freecodecamp.org/lets-backtrack-and-save-some-queens-1f9ef6af5415" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">my previous article</a> that discusses different algorithmic solutions to the N-Queens puzzle, you might understand what the issue really is.</p><p name="fea4" id="fea4" class="graf graf--p graf-after--p">We get almost 5X speed improvement on a 14 * 14 chessboard where we have to place 14 queens, after converting the safety check function to O(1) from O(N). So it was worth spending time to figure out an algorithm that would tell us in constant time if it is safe to place a queen on a given cell [i, j].</p><p name="ba6b" id="ba6b" class="graf graf--p graf-after--p">For reference, let’s look at how we did it back in the normal N-Queens.</p><figure name="5264" id="5264" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/edorado93/3b0cdbd4a3070544fbc332ce7b25175b.js"></script><figcaption class="imageCaption">O(1) safety check for N-Queens.</figcaption></figure><p name="d151" id="d151" class="graf graf--p graf-after--figure">We made use of some additional data structures to tell us if a queen had been placed in a certain diagonal, anti-diagonal, row or column in O(1) time and using these we could tell if it was safe to place a queen on a given cell [i, j].</p><p name="fdad" id="fdad" class="graf graf--p graf-after--p">However, if you’ve read through the problem statement carefully, we can now have trees in some locations on the board and if there is a tree between the current cell and an attacker lizard (it can be on a row, column, or any of the two diagonals), then it is in fact safe to place a lizard on the current cell. This is because the tree masks the attack, making the cell safe for a new lizard.</p><p name="b350" id="b350" class="graf graf--p graf-after--p">This changes things, a lot 😱.</p><p name="51dc" id="51dc" class="graf graf--p graf-after--p">Let’s start with what data structures we need for the implementation.</p><h3 name="e81f" id="e81f" class="graf graf--h3 graf-after--p">The Data Structures Used</h3><figure name="7016" id="7016" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/edorado93/5a05ee922d0f718eb514715ff6c521fb.js"></script></figure><p name="4b11" id="4b11" class="graf graf--p graf-after--figure">Let’s go over them one by one.</p><ul class="postList"><li name="689b" id="689b" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code u-paddingRight0 u-marginRight0">tree_locations<strong class="markup--strong markup--li-strong"> </strong></code>— this is just a dictionary that tells us if a given cell [i, j] contains a tree. This is populated right at the start of our solver.</li><li name="28f0" id="28f0" class="graf graf--li graf-after--li">The four data structures rows, columns, diagonals and anti-diagonals are used to simply tell us if there is a lizard in the respective <code class="markup--code markup--li-code">r, c, r — c, r + c </code>respectively. For this problem however, they represent integer values rather than boolean.<br>These four data structures store either 1 or -1 depending upon if we are placing a lizard at a current cell [i, j] or we are encountering a tree at a given cell [i, j]. <br>So the recursion proceeds from one cell to another and can either encounter a tree at a given cell [i, j] or it can encounter an empty cell in which case we have to call the <code class="markup--code markup--li-code">is_cell_safe</code> function to verify if we can place a lizard.<br>I will come to how the values are updated in these four data structures namely <code class="markup--code markup--li-code">rows</code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">, </em></strong><code class="markup--code markup--li-code">columns</code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">,</em></strong> <code class="markup--code markup--li-code">diagonals</code> and<strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em"> </em></strong><code class="markup--code markup--li-code">anti-diagonals</code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em"> </em></strong>later on.</li><li name="efe7" id="efe7" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">is_there_queen_in_this_column</code>—<strong class="markup--strong markup--li-strong"> </strong>this is a dictionary that simply stores the number of lizards that we placed in a given column. This is used as a part of a pruning heuristic employed to reduce the size of the search space.</li><li name="a123" id="a123" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">next_position_same_column</code><strong class="markup--strong markup--li-strong"> </strong>— this tells us for every [i, j] what is the next spot in the same column where we could try and place a new lizard. In the normal N-Queens problem, we can only place a single queen in a column, but in this case we can have multiple queens (lizards). <br>So, after placing a lizard at cell [i, j], we need the location of the first tree in the same column and say that is [k, j]. The next available location for placing a lizard in that column would then be [k+1, j]. This array is used as a part of this optimization.</li><li name="33c9" id="33c9" class="graf graf--li graf-after--li">Finally, <code class="markup--code markup--li-code">is_there_a_tree_ahead</code><strong class="markup--strong markup--li-strong"> </strong>is a dictionary which tells us if there is a tree somewhere in the board after this column (including this column as well). This is also populated once as a part of the initial preprocessing. This is also used as a part of the pruning heuristic referred to above while describing <code class="markup--code markup--li-code">is_there_queen_in_this_column</code>.</li></ul><h3 name="54c0" id="54c0" class="graf graf--h3 graf-after--li">The Preprocess function</h3><figure name="51a7" id="51a7" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/edorado93/719393f3198f9b7d53315a1de4388bee.js"></script></figure><p name="4279" id="4279" class="graf graf--p graf-after--figure">The preprocess function is called initially before our algorithm starts execution and all it does is fills up some of the data structures discussed above.</p><ul class="postList"><li name="02c5" id="02c5" class="graf graf--li graf-after--p">The <code class="markup--code markup--li-code">trees_populator</code><strong class="markup--strong markup--li-strong"> </strong>function is pretty straightforward. It fills up the dictionaries <code class="markup--code markup--li-code">tree_locations</code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em"> </em></strong>and <code class="markup--code markup--li-code">is_there_a_tree_ahead</code><strong class="markup--strong markup--li-strong"><em class="markup--em markup--li-em">.</em></strong></li><li name="2bf1" id="2bf1" class="graf graf--li graf-after--li">The function <code class="markup--code markup--li-code">find_next_largest</code><strong class="markup--strong markup--li-strong"> </strong>considers each column as consisting of 0s and 2s where a 0 represents an empty cell and a 2 represents a tree. For every cell, it finds out the next largest element or in other words, the nearest tree to that location in that column. We call the <code class="markup--code markup--li-code">find_next_largest</code><strong class="markup--strong markup--li-strong"> </strong>function<strong class="markup--strong markup--li-strong"> </strong>for every column on the board.</li></ul><p name="9603" id="9603" class="graf graf--p graf-after--li">For a better understanding of this algorithm, refer to <a href="http://www.geeksforgeeks.org/next-greater-element/" data-href="http://www.geeksforgeeks.org/next-greater-element/" class="markup--anchor markup--p-anchor" rel="nofollow noopener" target="_blank">this overview</a>.</p><h3 name="a5a3" id="a5a3" class="graf graf--h3 graf-after--p"><code class="markup--code markup--h3-code">is_cell_safe</code> Function</h3><figure name="1aab" id="1aab" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/edorado93/c80cd3ea4c1e5a7bf1444aac02dadc19.js"></script></figure><p name="65eb" id="65eb" class="graf graf--p graf-after--figure">A positive value in any of the dictionaries <code class="markup--code markup--p-code">row</code>, <code class="markup--code markup--p-code">column</code>, <code class="markup--code markup--p-code">diagonal</code>, <code class="markup--code markup--p-code">anti-diagonal</code><strong class="markup--strong markup--p-strong"> </strong>means there is a lizard that is would potentially attack another lizard that we’re trying to place at [row, column].</p><p name="cd2a" id="cd2a" class="graf graf--p graf-after--p">This function looks very similar to the one we used for the normal N-Queens. The important part is how we update the values in these data structures.</p><h3 name="402a" id="402a" class="graf graf--h3 graf-after--p">Mark Visited, Unmark Visited and Hash Util</h3><figure name="bc9c" id="bc9c" class="graf graf--figure graf--iframe graf-after--h3"><script src="https://gist.github.com/edorado93/a33d3d272c370666b1bd9d1767907ecf.js"></script></figure><p name="109d" id="109d" class="graf graf--p graf-after--figure">The function <code class="markup--code markup--p-code">hash_util</code> is a common function used to update the values for all the four data structures (namely <code class="markup--code markup--p-code">rows</code>, <code class="markup--code markup--p-code">columns</code>, <code class="markup--code markup--p-code">diagonals</code> and <code class="markup--code markup--p-code">anti-diagonals</code>).</p><p name="4cdb" id="4cdb" class="graf graf--p graf-after--p">This function is called both, when we are marking a lizard or a tree, or, when we are unmarking either of them. The marking and unmarking are simply processing before a recursive call and undoing whatever we processed, after the recursive call is over.</p><p name="4e1b" id="4e1b" class="graf graf--p graf-after--p">Remember the invariant discussed in this problem: we move from left to right across the board. Once we have encountered a tree at a certain location (i, j) during the recursion, it would be protecting lizards from each other for all the cells [i+1, j] and all columns k &gt; j.</p><p name="fe4d" id="fe4d" class="graf graf--p graf-after--p">The <code class="markup--code markup--p-code">result</code> variable is very important here. For example, we encountered a tree at say [3,0] and there was a lizard at [1,0]. Now moving onwards, this tree is masking the effect of the lizard at [1,0] — at least for this column — and we need to bring this effect into consideration somewhere.</p><p name="6dc2" id="6dc2" class="graf graf--p graf-after--p">So, in this case:</p><ul class="postList"><li name="487c" id="487c" class="graf graf--li graf-after--p"><code class="markup--code markup--li-code">is_marking</code> = <code class="markup--code markup--li-code">True</code>,</li><li name="8cef" id="8cef" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">is_tree</code> = <code class="markup--code markup--li-code">True</code>,</li><li name="e6b2" id="e6b2" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">dictionary</code> =<code class="markup--code markup--li-code"> column</code>,</li><li name="2fb9" id="2fb9" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">dictionary[col]</code> &gt; 0 (We store 1 whenever we place a lizard in that column). This is because we have already placed a lizard in the column 0 (at 1,0) and there was no tree discovered earlier that would hide the lizard’s effect for cell [3,0] in our example.</li><li name="22a7" id="22a7" class="graf graf--li graf-after--li"><code class="markup--code markup--li-code">value_to_add</code> = -1 (For a tree it’s -1, for a lizard it’s 1)</li></ul><p name="c8be" id="c8be" class="graf graf--p graf-after--li">So now, <code class="markup--code markup--p-code">dictionary[col]</code> = -1 and we return 1 as the result meaning that encountering a tree in the given (row, column) did in fact have some masking effect. We need to record this masking effect because this would be used at the time of undoing after recursion.</p><p name="c0e0" id="c0e0" class="graf graf--p graf-after--p">Now consider two other functions that form the main component of the algorithm.</p><figure name="06b5" id="06b5" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/edorado93/dc52a456f3f7f9f16a0f32feb535214c.js"></script></figure><h4 name="8c4e" id="8c4e" class="graf graf--h4 graf-after--figure">Mark Visited</h4><p name="ea8e" id="ea8e" class="graf graf--p graf-after--h4">We call this function in two cases. One is when we encounter a tree, and one is when we want to place a lizard. So, accordingly we have used a boolean variable to tell us why this function has been called.</p><p name="1fc5" id="1fc5" class="graf graf--p graf-after--p">In the case of a tree, we set the value to -1, otherwise it’s +1. Then, we update the four data structures. The logic is the same for all four of them. It’s just the key that changes for each one.</p><p name="58a6" id="58a6" class="graf graf--p graf-after--p">Remember, <code class="markup--code markup--p-code">row — col</code> is used to uniquely identify a diagonal and <code class="markup--code markup--p-code">row + col</code>is used to uniquely identify an anti-diagonal.</p><p name="659a" id="659a" class="graf graf--p graf-after--p">Also note that we store the quadruple of return values for the four data structures in <code class="markup--code markup--p-code">did_tree_affect</code><strong class="markup--strong markup--p-strong"> </strong>dictionary. This let’s us know if encountering a tree at the location (row, col) had any effect at all i.e. masking. This data is used during the undo operation.</p><h4 name="a217" id="a217" class="graf graf--h4 graf-after--p">Unmark Visited</h4><p name="8898" id="8898" class="graf graf--p graf-after--h4">We know that a positive value in any of the four dictionaries means that the given cell is not safe to place a lizard.</p><p name="aa6e" id="aa6e" class="graf graf--p graf-after--p">The undo operation is pretty simple for <strong class="markup--strong markup--p-strong">a lizard</strong>. If we are calling <code class="markup--code markup--p-code">unmark_visited</code> function for a lizard, it means the cell was safe enough before we placed a lizard there, so we just put a value of -1 in all the four dictionaries. (Remember, a positive value in either of rows, columns, diagonals or antidiagonals would break the <code class="markup--code markup--p-code">is_cell_safe</code> function for that cell)</p><p name="5b6e" id="5b6e" class="graf graf--p graf-after--p">In case the function <code class="markup--code markup--p-code">unmark_visited</code> was called for a tree, we retrieve values from <code class="markup--code markup--p-code">did_tree_affect</code> for the given [row, col] and use these values to revert the dictionaries. The sense in this is that suppose that we encountered a tree at given [row, col] and it masked the lizard’s effect for the diagonal and the column moving forward. See the following figure:</p><figure name="84c3" id="84c3" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 487px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 69.6%;"></div><img class="graf-image" data-image-id="1*WmD5HS5AIdMrSB3-n6oipg.png" data-width="1098" data-height="764" src="https://cdn-images-1.medium.com/max/800/1*WmD5HS5AIdMrSB3-n6oipg.png"></div><figcaption class="imageCaption">The two highlighted cells are masked by the Tree. However, there is no masking effect generated by the Tree for the row and the anti-diagonal.</figcaption></figure><p name="8e38" id="8e38" class="graf graf--p graf-after--figure">When we have to revert seeing the tree in the recursion, we basically have to revert it’s masking effect. That is what the <code class="markup--code markup--p-code">did_tree_affect</code> dictionary is used for.</p><p name="e1aa" id="e1aa" class="graf graf--p graf-after--p">Now that we have all our dictionaries in place, we can finally look at the actual DFS function that does all our heavy lifting for finding a solution.</p><h3 name="006f" id="006f" class="graf graf--h3 graf-after--p">Backtracking Solver</h3><p name="658c" id="658c" class="graf graf--p graf-after--h3">The code is seemingly complicated and the post would get extremely long if I started explaining it in detail. I might be able to clarify the doubts in the comments section. For now, I’ll write a detailed version of the pseudocode for completion.</p><pre name="0c2a" id="0c2a" class="graf graf--pre graf-after--p">1. Start at the cell (0, 0)</pre><pre name="756c" id="756c" class="graf graf--pre graf-after--pre">2. For a given cell (i, j)<br>     a. If all the lizards have been placed, print the solution and return True.</pre><pre name="9de9" id="9de9" class="graf graf--pre graf-after--pre">b. Check if the current cell has a tree. <br>         b1. Call mark_visited function to update the 4 dictionaries with possible masking effects due to this tree.</pre><pre name="0776" id="0776" class="graf graf--pre graf-after--pre">c. If the current cell isn&#39;t a tree and a lizard can be placed<br>         c1. Call mark visited for [i, j] as a lizard.<br>         c2. Add [i, j] to the solution set. <br>         c3. Increment column j as containing one more lizard.<br>         c4. Find the next row number to recurse on in the column j. If there is such a row number say r, then recurse on [r, j]. Else recurse on [0, j+1]<br>         c5. Unmark the current cell. Call function unmark_visited for [i, j]<br>         c6. Decrement column j as it contains one less lizard now.</pre><pre name="345f" id="345f" class="graf graf--pre graf-after--pre">d. We may want to have a branch in our recursive solution where we did not place a lizard at [i, j] and simply moved forward. OR, we couldn&#39;t place a lizard at [i, j] and we now have to move forward. <br>         d1. if [i + 1] &lt; n, recurse on [i+1, j]<br>         d2. else [PRUNING HEURISTIC]<br>              d2.1 check if <br>                   * we did not place any lizard in the current col.<br>                   * there is no tree in the current col and ahead. <br>                   * number of lizards left to be placed are more than the number of columns left. <br>                   * If yes to all 3, then BACKTRACK.<br>              d2.2 Else, recurse on [0, j+1]</pre><pre name="c597" id="c597" class="graf graf--pre graf-after--pre">e. If the current cell was in-fact a tree, then call unmark_visited to undo its effects.</pre><p name="53e7" id="53e7" class="graf graf--p graf-after--pre">That is the most apt pseudocode that I could come up with for the DFS based solver. This is exactly how the function <code class="markup--code markup--p-code">dfs</code><strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em"> </em></strong>is structured.</p><p name="fecd" id="fecd" class="graf graf--p graf-after--p">With this logic, the largest test-case that I was able to solve was to place 97,000 lizards on a 1000 * 1000 board. It took around 2 seconds to run.</p><figure name="86a6" id="86a6" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 655px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 93.60000000000001%;"></div><img class="graf-image" data-image-id="1*Pbn-wAU4pWiRQIee8vCGTg.jpeg" data-width="768" data-height="719" src="https://cdn-images-1.medium.com/max/800/1*Pbn-wAU4pWiRQIee8vCGTg.jpeg"></div><figcaption class="imageCaption"><a href="http://bit.ly/2j6x5KQ" data-href="http://bit.ly/2j6x5KQ" class="markup--anchor markup--figure-anchor" rel="nofollow noopener" target="_blank">http://bit.ly/2j6x5KQ</a></figcaption></figure><p name="20ec" id="20ec" class="graf graf--p graf-after--figure">Now I’m telling you, that this might sound like a huge feat, but it isn’t actually. This was pretty easy for the algorithm. Question for you guys is to figure out the why behind this 😉. Let me know in the comment section !</p><p name="934b" id="934b" class="graf graf--p graf-after--p">Also, if you do come up with some other simpler approach to solve the problem, I would love to discuss that as well. Let me know in the comment section itself.</p><p name="ab94" id="ab94" class="graf graf--p graf-after--p graf--trailing">Hope you liked the article and enjoyed as much I did while solving this problem. If you liked this post, do spread the love (❤) as much as possible. Cheers!</p></div></div></section>
+</section>
+</article></body></html>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2018/07/12/Recursion-Demystified-99a2105cb871/">
+            Recursion Demystified
+            <small>12 Jul 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2018/07/12/Explore-the-applications-and-limits-of-Breadth-First-Search-to-the-shortest-paths-in-a-weighted-1e7b28b3307/">
+            Breadth First Search and its application to shortest paths in weighted graphs
+            <small>12 Jul 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2018/06/08/A-deep-dive-into-part-of-speech-tagging-using-the-Viterbi-algorithm-17c8de32e8bc/">
+            A deep dive into part-of-speech tagging using the Viterbi algorithm
+            <small>08 Jun 2018</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
