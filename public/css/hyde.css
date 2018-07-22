@@ -32,6 +32,10 @@
  * Update the foundational and global aspects of the page.
  */
 
+.lead {
+  font-size: 1.1em;
+}
+
 .name {
   width: 100%;
   font-size: 0.8em;
@@ -175,15 +179,15 @@ a.sidebar-nav-item:focus {
     right: 0;
   }
   .layout-reverse .content {
-    margin-left: 2rem;
-    margin-right: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 
 @media (min-width: 64em) {
   .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 
