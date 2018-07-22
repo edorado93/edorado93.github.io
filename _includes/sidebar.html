@@ -1,3 +1,4 @@
+<script type="text/javascript" content-type="application/javascript;charset=utf-8" src="/typewriter.js"></script>   
 <div class="sidebar">
   <div class="sidebar-logo" style="align:center">
         <img src="http://www.gravatar.com/avatar/{{ site.author.gravatar_md5 }}?s=350" />
@@ -47,7 +48,7 @@
           {{ site.title }}
         </a>
       </h1>  
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead">I am a <span id="app"></span></p>
     </div>
 
     <nav class="sidebar-nav">
@@ -66,7 +67,7 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
+      <a class="sidebar-nav-item" href="/about/">DO NOT CLICK</a>    
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/assets/cv.pdf">CV</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
@@ -75,3 +76,20 @@
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
+<script type="text/javascript">
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('Coder')
+        .pauseFor(1200)
+        .deleteAll()
+        .typeString('Writer')
+        .pauseFor(1200)
+        .deleteAll()
+        .typeString('Time Pass Chef ;)')
+        .start();
+
+</script> 
