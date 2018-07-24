@@ -27,3 +27,44 @@
 .about-me {
     font-size: 1.3rem;
 }
+
+.timeline-item {
+  padding-top: 3.5em;
+  padding-left: 3em;
+  position: relative;
+  color: rgba(0, 0, 0, .7);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-item::before {
+  content: attr(position-held);
+  font-weight: bold;
+  display: block;
+  font-size: 1.5rem;
+  margin-top: -1.8em;
+}
+
+.timeline-item::after {
+  width: 2.5em;
+  height: 2.5em;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -0.1em;
+  content: '';
+  
+}
+
+/* Need to add this per job. Because the icons would be different for different jobs */
+.timeline-item.hike::after {
+    background: url("../../assets/Hike_Mark_Blue.png") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.timeline-item.isi::after {
+    background: url("../../assets/isi.png") 0 0 no-repeat;
+    background-size: cover;
+}
