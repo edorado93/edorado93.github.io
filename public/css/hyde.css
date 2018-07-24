@@ -64,9 +64,30 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 17.5px;
   }
 }
+@media (min-width: 68em) {
+    html {
+        font-size: 19px;
+    }
+}
+@media (min-width: 78em) {
+    html {
+        font-size: 20.5px;
+    }
+}
+@media (min-width: 88em) {
+    html {
+        font-size: 23px;
+    }
+}
+@media (min-width: 98em) {
+    html {
+        font-size: 24.5px;
+    }
+}
+
 
 
 /*
@@ -186,8 +207,19 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .layout-reverse .content {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 84em) {
+  .layout-reverse .content {
+    margin-left: 17%;
+  }
+}
+
+@media (min-width: 104em) {
+  .layout-reverse .content {
+    margin-left: 19%;
   }
 }
 
