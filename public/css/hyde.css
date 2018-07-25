@@ -57,32 +57,40 @@
 html {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
-@media (min-width: 48em) {
+
+
+@media (min-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1248px) {
   html {
     font-size: 16px;
   }
 }
-@media (min-width: 58em) {
+@media (min-width: 1392px) {
   html {
     font-size: 17.5px;
   }
 }
-@media (min-width: 68em) {
+@media (min-width: 1632px) {
     html {
         font-size: 19px;
     }
 }
-@media (min-width: 78em) {
+@media (min-width: 1872px) {
     html {
         font-size: 20.5px;
     }
 }
-@media (min-width: 88em) {
+@media (min-width: 2112px) {
     html {
         font-size: 23px;
     }
 }
-@media (min-width: 98em) {
+@media (min-width: 2352px) {
     html {
         font-size: 24.5px;
     }
@@ -104,7 +112,7 @@ html {
   background: linear-gradient(to right, #414345, #808080);
   
 }
-@media (min-width: 48em) {
+@media (min-width: 960px) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -150,7 +158,7 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 1152px) {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
@@ -172,7 +180,7 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 1152px) {
   .content {
     max-width: 53em;
     margin-left: 20rem;
@@ -180,7 +188,7 @@ a.sidebar-nav-item:focus {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1536px) {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
@@ -194,7 +202,7 @@ a.sidebar-nav-item:focus {
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 960px) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
@@ -204,25 +212,6 @@ a.sidebar-nav-item:focus {
     margin-right: 10rem;
   }
 }
-
-@media (min-width: 64em) {
-  .layout-reverse .content {
-    margin-left: 9%;
-  }
-}
-
-@media (min-width: 84em) {
-  .layout-reverse .content {
-    margin-left: 11%;
-  }
-}
-
-@media (min-width: 104em) {
-  .layout-reverse .content {
-    margin-left: 13%;
-  }
-}
-
 
 
 /*

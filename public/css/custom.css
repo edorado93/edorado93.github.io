@@ -28,6 +28,10 @@
     font-size: 1.3rem;
 }
 
+.date { 
+    color: #808080;
+}
+
 .timeline-item {
   padding-top: 3.5em;
   padding-left: 3em;
@@ -36,7 +40,7 @@
 }
 
 .timeline-item p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .timeline-item::before {
@@ -67,4 +71,107 @@
 .timeline-item.isi::after {
     background: url("../../assets/isi.png") 0 0 no-repeat;
     background-size: cover;
+}
+
+/* Projects */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+	@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro");
+	body {
+	background: #eee;
+	padding: 40px 0px;
+}
+.card {
+	width: 22em;
+	margin: 0px auto;
+	background-color: white;
+	box-shadow: 0px 5px 20px #555;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.card:hover .card-image img {
+	width: 110%;
+	filter: grayscale(0);
+}
+.card-image {
+	height: 12em;
+	position: relative;
+	overflow: hidden;
+}
+.card-image img {
+	width: 100%;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: grayscale(1);
+	transition-property: filter width;
+	transition-duration: .3s;
+}
+.card-body {
+	text-align: center;
+	padding: 0em 2em 1em;
+	box-sizing: border-box;
+}
+.card-date {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.card-date,
+.card-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.card-date,
+.card-exceprt,
+{
+	color: #606060;
+}
+
+.btn {
+  padding: 5px 15px;
+  text-decoration: none;
+  background: transparent;
+  border: 2px solid #f27c7c;
+  color: #f27c7c;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  -webkit-box-shadow: 2px 2px 0 #f27c7c;
+  -moz-box-shadow: 2px 2px 0 #f27c7c;
+  -ms-box-shadow: 2px 2px 0 #f27c7c;
+  box-shadow: 2px 2px 0 #f27c7c;
+}
+.btn:hover {
+  box-shadow: none;
+  top: 2px;
+  left: 2px;
+  -webkit-box-shadow: 2px 2px 0 transparent;
+  -moz-box-shadow: 2px 2px 0 transparent;
+  -ms-box-shadow: 2px 2px 0 transparent;
+  box-shadow: 2px 2px 0 transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .left, .right {
+        align-content: center;
+        float: none;
 }
