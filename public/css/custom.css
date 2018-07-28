@@ -18,6 +18,20 @@
  margin: 0 auto;
  }
 
+.projects {
+    margin: 1em;
+}
+
+.section-heading {
+    border-bottom: solid;
+    border-width: 0.05em;
+    border-color: #bcbcbc;
+    font-family: Roboto, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 .top_image {
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +39,7 @@
 }
 
 .about-me {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .date { 
@@ -70,6 +84,11 @@
 
 .timeline-item.isi::after {
     background: url("../../assets/isi.png") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.timeline-item.fcc::after {
+    background: url("../../assets/fcc.png") 0 0 no-repeat;
     background-size: cover;
 }
 

@@ -55,7 +55,7 @@
 }
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Roboto, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 
@@ -109,7 +109,8 @@ html {
   text-align: center;
   padding: 7rem 1rem;
   color: rgba(255,255,255,.5);
-  background: linear-gradient(to right, #414345, #808080);
+  background: linear-gradient(to right, #136a8a, #267871);    
+/*  background: linear-gradient(to right, #414345, #808080);*/
   
 }
 @media (min-width: 960px) {
@@ -132,7 +133,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: Roboto, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 2rem;
 }
 
