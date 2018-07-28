@@ -176,9 +176,15 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  text-align: justify;
+  text-align: left;
   padding-top:    4rem;
   padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+    .content {
+        text-align: justify;
+    }
 }
 
 @media (min-width: 1152px) {

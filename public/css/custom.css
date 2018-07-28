@@ -1,3 +1,15 @@
+.aspectRatioPlaceholder.is-locked{
+    margin: auto;
+}
+
+.graf.graf--h3.graf-after--p {
+    font-size: 2em;
+}
+
+.graf.graf--h4.graf-after--p {
+    font-size: 1.5em;
+}
+
 .sidebar {
  opacity: 1.0;
  }
