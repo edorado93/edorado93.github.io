@@ -1,3 +1,7 @@
+.p-name {
+    font-size: 1em;
+}
+
 .aspectRatioPlaceholder.is-locked{
     margin: auto;
 }
@@ -38,7 +42,7 @@
     border-bottom: solid;
     border-width: 0.05em;
     border-color: #bcbcbc;
-    font-family: Roboto, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 2em;
     margin-bottom: 1em;
     margin-top: 1em;
