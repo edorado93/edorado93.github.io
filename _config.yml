@@ -9,7 +9,7 @@ permalink:        pretty
 title:            'Sachin Malhotra'
 tagline:          '#include<code>'
 description:      'Blogger | Nadal-ion'
-url:              https://edorado.github.io
+url:              https://edorado93.github.io
 baseurl:          ""
 
 author:
@@ -26,9 +26,6 @@ paginate:         5
 
 # Custom vars
 version:          2.1.0
-
-github:
-  repo:           https://edorado.github.io
 
 plugins:
   - jekyll-gist
