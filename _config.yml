@@ -10,7 +10,7 @@ title:            'Sachin Malhotra'
 tagline:          '#include<code>'
 description:      'Blogger | Nadal-ion'
 url:              https://edorado.github.io
-baseurl:          /
+baseurl:          ""
 
 author:
   name:           'Sachin Malhotra'
