@@ -7,6 +7,6 @@ I exported all of my posts from Medium and added them to the website and in addi
 
 Hope you like it!
 
-![alt text](https://raw.githubusercontent.com/edorado93/edorado.github.io/master/assets/portfolio-screenshot.png)
+![alt text](https://raw.githubusercontent.com/edorado93/edorado.github.io/master/assets/portfolio-website.png)
 
 
