@@ -42,7 +42,7 @@
     border-bottom: solid;
     border-width: 0.05em;
     border-color: #bcbcbc;
-    font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Helvetica, sans-serif, Arial;
     font-size: 2em;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -205,7 +205,7 @@
   box-shadow: 2px 2px 0 transparent;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     .left, .right {
         align-content: center;
         float: none;

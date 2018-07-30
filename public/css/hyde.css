@@ -55,29 +55,35 @@
 .post-title {
   text-align: left;
   font-size:  2.5em;
-    font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;  
+    font-family: Helvetica, sans-serif, Arial;
     font-weight: 500;
 }
 
 .post-title a {
-    font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;  
+    font-family: Helvetica, sans-serif, Arial;
     font-weight: 500;
 }
 
 html {
-  font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Helvetica, sans-serif, Arial;
   font-size: 12px;
 }
 
 @media (min-width: 960px) {
   html {
-    font-size: 14px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1160) {
+  html {
+    font-size: 13px;
   }
 }
 
 @media (min-width: 1248px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1392px) {
@@ -92,17 +98,17 @@ html {
 }
 @media (min-width: 1872px) {
     html {
-        font-size: 20.5px;
+        font-size: 21.5px;
     }
 }
 @media (min-width: 2112px) {
     html {
-        font-size: 23px;
+        font-size: 24.5px;
     }
 }
 @media (min-width: 2352px) {
     html {
-        font-size: 24.5px;
+        font-size: 26.5px;
     }
 }
 
@@ -143,7 +149,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Helvetica Neue", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Helvetica, sans-serif, Arial;
   font-size: 2rem;
 }
 
@@ -187,29 +193,16 @@ a.sidebar-nav-item:focus {
 
 .content {
   text-align: left;
+  max-width: 53em;
   padding-top:    4rem;
   padding-bottom: 4rem;
+  margin-left: 10rem;
 }
 
 @media (min-width: 1024px) {
     .content {
         text-align: justify;
     }
-}
-
-@media (min-width: 1152px) {
-  .content {
-    max-width: 53em;
-    margin-left: 20rem;
-    margin-right: 2rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
 }
 
 
@@ -223,10 +216,6 @@ a.sidebar-nav-item:focus {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
-  }
-  .layout-reverse .content {
-    margin-left: 10rem;
-    margin-right: 10rem;
   }
 }
 
