@@ -39,7 +39,7 @@
 .name {
   padding-left: 0.3em;
   width: 100%;
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-weight: normal;    
 }
 
@@ -55,17 +55,17 @@
 .post-title {
   text-align: left;
   font-size:  2.5em;
-    font-family: Helvetica, sans-serif, Arial;
+    font-family: 'Merriweather', serif;
     font-weight: 500;
 }
 
 .post-title a {
-    font-family: Helvetica, sans-serif, Arial;
+    font-family: 'Merriweather', serif;
     font-weight: 500;
 }
 
 html {
-  font-family: Helvetica, sans-serif, Arial;
+  font-family: 'Merriweather', serif;
   font-size: 12px;
 }
 
@@ -149,7 +149,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: Helvetica, sans-serif, Arial;
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
 }
 
