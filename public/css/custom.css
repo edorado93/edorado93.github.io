@@ -98,6 +98,11 @@
     background-size: cover;
 }
 
+.timeline-item.leetcode::after {
+    background: url("../../assets/leetcode.png") 0 0 no-repeat;
+    background-size: cover;
+}
+
 .timeline-item.isi::after {
     background: url("../../assets/isi.png") 0 0 no-repeat;
     background-size: cover;
