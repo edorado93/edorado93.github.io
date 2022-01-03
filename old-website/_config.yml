@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'Sachin Malhotra'
+tagline:          '#include<code>'
+description:      'Blogger | Nadal-ion'
+url:              https://edorado93.github.io
+baseurl:          ""
+
+author:
+  name:           'Sachin Malhotra'
+  url:            https://twitter.com/edorado93
+  gravatar_md5:   e51882718aefa4b1acf0f59ab2edc916
+  github:         edorado93
+  linkedin:       edorado93
+  medium:         sachinmalhotra
+  instagram:      edorado93
+  twitter:        edorado93
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
