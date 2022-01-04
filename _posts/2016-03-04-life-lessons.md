@@ -1,4 +1,16 @@
-![](https://miro.medium.com/max/3840/1*OGdRMytMAm-49cZ-YUlkOg.jpeg)
+---
+title: "Life Lessons from a 21 years-old"
+header:
+  image: /assets/images/life-lessons-header.jpeg
+excerpt: "Lessons learnt by a young Software Engineer."
+date: March 4, 2016
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+  - Life Lessons
+  - Software Engineering
+---
 
 > Life is a Race! If you don't run fast, someone will crush you and overtake you.
 
@@ -8,7 +20,8 @@ It's a really long article. I invested a lot of time coming up with these points
 
 ## Life is Not a Race
 
-The most important point that we don't realize is that *life in fact is not inherently a race. It is we who make it a race and bring about this feeling of competition.* 
+<b>Note:</b> The most important point that we don't realize is that life in fact is not inherently a race. It is we who make it a race and bring about this feeling of competition.
+{: .notice--info}
 
 Right from the time we were born, we were taught that we need to come first. First in class, first in sports, first in extracurricular activities, etc. We are in a constant state of comparison with our peers. In this process we actually limit our potential.
 
@@ -18,11 +31,12 @@ What we don't realize is that he probably had the capability to score 90+. And i
 
 >Why? because there is a student who performed better than them. 
 
-We take this sense of competition everywhere we go. People can compete on just about anything. Consider this: there are two families A and B. when family A visits B, B makes about say *5 dishes for lunch.* (And yes, this is in fact counted !!). 
+We take this sense of competition everywhere we go. People can compete on just about anything. Consider this: there are two families A and B. when family A visits B, B makes about say *5 dishes for lunch.* (And yes, this is in fact counted). 
 
 Now, family B happens to visit A in the future and in case A makes a lesser number of dishes than what B made, then it is considered to be a sign of disrespect. Trust me, this happens.
 
-> Life is like a car ride from a source to a destination.
+<b>Note:</b> Life is like a car ride from a source to a destination.
+{: .notice--info}
 
 No matter how fast you go and who accompanies you, you will reach your destination. People will keep getting in and getting off of your car as you continue down your lane.
 
@@ -40,19 +54,20 @@ That's a very big problem in relationships.
 
 We give loads of love, but we also expect a lot of that coming back. We expect a lot of stuff from a lot of people and that is where it all goes wrong. 
 
-*_Relationships simply mean give, give and only give. Business means give and take. It's up to you to decide what you consider it to be._*
+<b>Note:</b> Relationships simply mean give, give and only give. Business means give and take. It's up to you to decide what you consider it to be.
+{: .notice--info}
 
 ## Who is the real us?
 
-A typical professional's day appears to be one that has literally been programmed into their memory. They do the same things over and over again, in the same manner, in the same sequence, and still knows that what they are doing is probably *shitty and is still willing to do that for years at a stretch.* The life of a typical IT person is somewhere on these lines:-
+A typical professional's day appears to be one that has literally been programmed into their memory. They do the same things over and over again, in the same manner, in the same sequence, and still knows that what they are doing is probably shitty and is still willing to do that for years at a stretch. The life of a typical IT person is somewhere on these lines:-
 
 1.  Get up (Same time every day).
 2.  Prepare breakfast (Same old same old. No surprises here :p)
 3.  Reach office round about 9 a.m. Every single day without a leave.
-4.  Work your ass off the entire day for 12-13 hours at a stretch. He probably doesn't even love the work he is doing, but still does it.
+4.  Work your ass off the entire day for 12-13 hours at a stretch. They probably don't even love the work they are doing, but still do it.
 5.  Toady to your manager.
 6.  Come home late at night exhausted from work.
-7.  Sleep. Well, this was a no-brainer!!
+7.  Sleep.
 
 > This seems to be a script fed to a robot and it executes this every day without any exceptions.
 
@@ -68,11 +83,12 @@ Take a break from this monotonous routine and you might be surprised with what y
 
 In our day-to-day lives performing the same laborious mundane tasks over and over again can be extremely overwhelming. So much so that we always try to find an answer to the question
 
->"What's in it for me ?"
+<i class="fas fa-book-dead"></i> "What's in it for me ?"
+{: .notice--danger}
 
 We always look for opportunities that would benefit us. In the process, we even tend to hurt others and if someone is facing a problem or has a contrasting viewpoint, we tend to go all out against them and criticize them for being different. My suggestion?
 
-> Step in the shoes of the other person and try walking a mile. Be empathetic to them. Prove the cynical ideology of people wrong by understanding others' viewpoints as well and understanding them and at times even accepting them without letting your ego get in the way.
+Step in the shoes of the other person and try walking a mile. Be empathetic to them. Prove the cynical ideology of people wrong by understanding others' viewpoints as well and understanding them and at times even accepting them without letting your ego get in the way.
 
 ## Health is wealth
 
@@ -84,7 +100,8 @@ Still, we don't pay much heed to our health. Health somehow does not become a pr
 
 It is only when the doctor tells us *"Enough, if you don't exercise now, you might be bedridden for life"* do we start to consider this thing called health seriously. 
 
-If you can't get off the bed in the morning yourself, how will you work all day long?
+<i class="fas fa-exclamation"></i> If you can't get off the bed in the morning yourself, how will you work all day long?
+{: .notice--warning}
 
 Who will take care of you in your old age when things will get even worse?
 
@@ -104,7 +121,8 @@ I've stumbled upon so many blogs and articles here on Medium itself and I can't 
 
 Recently I've been reading about this new kind of job profile for remote workers and developers and it's known as a *digital nomad.* 
 
-A digital nomad is like a normal developer except he does not stay in one place for a long time. Instead, they keeps moving from one place to another like a *nomad.* Learning about problems people face, building solutions for them, and most of all, traveling a lot.
+<b>Note:</b> A digital nomad is like a normal developer except he does not stay in one place for a long time. Instead, they keeps moving from one place to another like a *nomad.* Learning about problems people face, building solutions for them, and most of all, traveling a lot.
+{: .notice--info}
 
 Sounds fun right? Do you have what it takes to quit your day job and become a digital nomad?
 

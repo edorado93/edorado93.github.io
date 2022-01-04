@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Sachin Malhotra"
 description              : "An amazing website."
 port                     : 4000
 host                     : "0.0.0.0"
@@ -194,7 +194,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "<!--more-->"
 incremental: false
 
 
@@ -287,6 +287,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
