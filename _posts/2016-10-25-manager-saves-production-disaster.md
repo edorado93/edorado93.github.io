@@ -3,6 +3,7 @@ title: "Manager to the rescue!"
 header:
   overlay_image: /assets/images/production-header.jpeg
   overlay_filter: 0.5
+  og_image: https://og-image.vercel.app/Phew!%20I%20almost%20broke%20production.png
 excerpt: "How my manager saved me from breaking 50 production servers. A retrospective on a potential screw-up on our production system due to a bad piece of code."
 date: October 25, 2016
 toc: true
