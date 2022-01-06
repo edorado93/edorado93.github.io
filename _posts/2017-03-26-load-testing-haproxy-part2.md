@@ -20,7 +20,7 @@ This is the second part in the 3 part series on performance testing of the famou
 
 This post will focus on the TCP Port exhaustion problem and how we can deal with it. In the last post we talked about how we can tune the kernel level and process level ulimit settings. This post is focussed on modifying the sysctl settings to get over the port exhaustion limits.
 
-## SYSCTL Local Port Range and Orphaned Sockets
+## SYSCTL Local Range and Orphaned Sockets
 
 Port exhaustion is a problem that will cause TCP communications with other machines over the network to fail. Most of the times there is a single process that leads to this problem and restarting it will fix the issue, temporarily. It will however come back to bite in a few hours or days depending on the system load.
 
