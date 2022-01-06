@@ -61,7 +61,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
+search                   : true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -151,6 +151,11 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
+# Collections
+collections:
+  systemdesign:
+    output: true
+    permalink: /:collection/:path/
 
 # Reading Files
 include:
@@ -283,6 +288,17 @@ defaults:
   - scope:
       path: ""
       type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _systemdesign
+  - scope:
+      path: ""
+      type: systemdesign
     values:
       layout: single
       author_profile: true

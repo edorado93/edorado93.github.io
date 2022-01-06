@@ -6,6 +6,7 @@ header:
   og_image: https://og-image.vercel.app/Life%20Lessons%20From%20A%20young%20Software%20Engineer.png
 excerpt: "Lessons learnt by a young Software Engineer."
 date: March 4, 2016
+show_date: true
 toc: true
 toc_label: "Content"
 toc_sticky: true
