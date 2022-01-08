@@ -5,7 +5,7 @@ header:
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Load%20Testing%20With%20HAProxy%20Part%202.png
 excerpt: "Read on to find out all the tweaks we did to extract those teeny tiny bits of performance from a reliable and highly used load balancer."
-date: March 19, 2017
+date: April 16, 2017
 show_date: true
 toc: true
 toc_label: "Content"
