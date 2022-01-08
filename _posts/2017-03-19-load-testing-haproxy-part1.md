@@ -22,9 +22,9 @@ Load Testing? HAProxy? If all this seems greek to you, don't worry. I will provi
 
 For reference, our current stack is:
 
-*   Instances hosted on [Amazon EC2](https://aws.amazon.com/ec2/) (not that this one should matter)
-*   Ubuntu 14.04 (Trusty) for the OS
-*   [Supervisor](http://supervisord.org/) for process management
+*  Instances hosted on [Amazon EC2](https://aws.amazon.com/ec2/) (not that this one should matter)
+*  Ubuntu 14.04 (Trusty) for the OS
+*  [Supervisor](http://supervisord.org/) for process management
 
 On production, we have around 30-odd [HAProxy](https://serversforhackers.com/load-balancing-with-haproxy) load balancers that help us route our traffic to the backend servers which are in an auto-scaling mode and hence don't have a fixed number. The number of backend servers ranges from 12–32 throughout the day.
 
@@ -36,9 +36,9 @@ Never before did we put any dedicated effort into finding out the limits of our 
 
 As of writing this post, we're in the process of moving our entire traffic (HTTP) to HTTPS (that is, encrypted traffic). But before moving further, we needed some definitive answers to the following questions:
 
-1.  *What is the impact as we shift our traffic from Non-SSL to SSL?* ~ CPU should definitely take a hit because SSL handshake is not a normal 3-way handshake, it is rather a 5-way handshake and after the handshake is complete, further communication is encrypted using the secret key generated during the handshake and this is bound to take up CPU.
-2.  *What are some other hardware/software limits that might be reached on production as a result of SSL termination at the HAProxy level* ~ We could also go for the SSL PassThrough option provided by HAProxy which terminates/decrypts the SSL connection at the backend servers. However, SSL termination at the HAProxy level is more performant and so this is what we intend to test.
-3.  *What is the best hardware required on production to support the kind of load that we see today* ~ Will the existing hardware scale or do we need bigger machines? This was also one of the prime questions we wanted an answer to via this test.
+1. *What is the impact as we shift our traffic from Non-SSL to SSL?* ~ CPU should definitely take a hit because SSL handshake is not a normal 3-way handshake, it is rather a 5-way handshake and after the handshake is complete, further communication is encrypted using the secret key generated during the handshake and this is bound to take up CPU.
+2. *What are some other hardware/software limits that might be reached on production as a result of SSL termination at the HAProxy level* ~ We could also go for the SSL PassThrough option provided by HAProxy which terminates/decrypts the SSL connection at the backend servers. However, SSL termination at the HAProxy level is more performant and so this is what we intend to test.
+3. *What is the best hardware required on production to support the kind of load that we see today* ~ Will the existing hardware scale or do we need bigger machines? This was also one of the prime questions we wanted an answer to via this test.
 
 For this purpose, we put in a dedicated effort for load testing HAProxy version 1.6 to find out answers to the above questions. I won't be outlining the approach we took nor will I be outlining the results of this exercise in this blog post.
 
