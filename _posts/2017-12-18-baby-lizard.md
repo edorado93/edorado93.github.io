@@ -184,7 +184,7 @@ Now that we have all our dictionaries in place, we can finally look at the actua
 
 The code is seemingly complicated and the post would get extremely long if I started explaining it in detail. I might be able to clarify the doubts in the comments section. For now, I’ll write a detailed version of the pseudocode for completion.
 
-1. Start at the cell (0, 0)2\. For a given cell (i, j)  
+1. Start at the cell (0, 0). For a given cell (i, j)  
     1. If all the lizards have been placed, print the solution and return True
     2. Check if the current cell has a tree.   
         1. Call `mark_visited` function to update the 4 dictionaries with possible masking effects due to this tree.c. If the current cell isn't a tree and a lizard can be placed  
@@ -201,7 +201,7 @@ The code is seemingly complicated and the post would get extremely long if I sta
                    * there is no tree in the current col and ahead.   
                    * number of lizards left to be placed are more than the number of columns left.   
                    * If yes to all 3, then BACKTRACK.  
-                2. Else, recurse on `[0, j+1]`e. If the current cell was in-fact a tree, then call `unmark_visited` to undo its effects.
+                2. Else, recurse on `[0, j+1]`. If the current cell was in-fact a tree, then call `unmark_visited` to undo its effects.
 
 That is the most apt pseudocode that I could come up with for the DFS based solver. This is exactly how the function `dfs`  is structured.
 

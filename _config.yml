@@ -151,6 +151,11 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# tags
+tags_archive:
+  type: liquid
+  path: /tags/
+
 # Reading Files
 include:
   - .htaccess
