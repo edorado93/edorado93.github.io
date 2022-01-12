@@ -19,6 +19,16 @@
   }
 }
 
+applause-button {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  .count-container {
+    color: inherit;
+  }
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;

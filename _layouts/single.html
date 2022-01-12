@@ -44,6 +44,12 @@ layout: default
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.applause_button %}
+          <applause-button class="mb6" multiclap="true" 
+            color="{{ site.accent_color | default:'rgb(79,177,186)' }}"
+            url="{{ site.url }}{{ page.url }}" >
+          </applause-button>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
