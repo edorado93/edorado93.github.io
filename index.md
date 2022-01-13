@@ -8,7 +8,7 @@ class: wide
 header:
   overlay_image: "/assets/images/landing-page/img1.jpg"
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: [Unsplash](https://unsplash.com) 
+  caption: "[Unsplash](https://unsplash.com)"
 photography_gallery:
   - url: /assets/images/intro-blog/gallery-1.jpg
     image_path: /assets/images/intro-blog/gallery-1.jpg
@@ -16,9 +16,6 @@ photography_gallery:
   - url: /assets/images/intro-blog/gallery-2.jpg
     image_path: /assets/images/intro-blog/gallery-2.jpg
     alt: "placeholder image 2"
-  - url: /assets/images/intro-blog/gallery-3.jpg
-    image_path: /assets/images/intro-blog/gallery-3.jpg
-    alt: "placeholder image 3"
   - url: /assets/images/intro-blog/gallery-4.jpg
     image_path: /assets/images/intro-blog/gallery-4.jpg
     alt: "placeholder image 4"
