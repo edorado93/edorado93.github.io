@@ -23,7 +23,7 @@ The [CodeChef May 2018 Long Challenge](https://www.codechef.com/MAY18) ended abo
 Without wasting any more time, let’s get to it.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img-1.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img1.png" alt="">
 </figure>
 
 ## Unravelling the Problem Statement
@@ -177,13 +177,13 @@ would be enough to see if we can negate the number at index `i` .
 Let’s look at the code for the recursion containing all the ideas discussed above.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img-2.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img2.png" alt="">
 </figure>
 
 That’s all nice and dandy. But, this is just recursion, and the heading says dynamic programming. That means there would be overlapping subproblems. Let us look at the recursion tree to see if there are any.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img3.png" alt="">
 </figure>
 
 As you can see, there are overlapping subproblems in the recursion tree. That is why we can use memoization.
@@ -221,7 +221,7 @@ So we simply store 1 or -1 depending upon if negating the number at index i (if 
 Now comes the part where we backtrack to find the solution to our original problem. Note that the decision for the very first number is what propagates the recursion further. If the first number was negated, the second number would be positive and the third number’s decision can be found using `parent[2][true]`. Similarly, if the first number wasn’t negated, then we move onto the second number and it’s decision can be found using `parent[1][false]` and so on. Let’s look at the code.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img-4.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img4.png" alt="">
 </figure>
 
 ## A Better Approach
@@ -247,7 +247,7 @@ In case the swallow condition is not satisfied and we end up negating the number
 Have a look at the code for a better understanding.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img-5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/dynamic-programming/img5.png" alt="">
 </figure>
 
 Hence, just a single variable i.e. the index is used to define the state of the recursion. So the time and space complexity, both got reduced to half of what they were in the previous solution.

@@ -46,7 +46,7 @@ Let's imagine an undirected graph of all the users on Facebook, where vertices `
 More formally, we need to see the shortest distance between two nodes in an undirected, unweighted graph.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img-2.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img2.png" alt="">
 </figure>
 
 Consider two vertices in this undirected graph A and C. There are two different paths for reaching C:
@@ -72,7 +72,7 @@ We will look at two classic graph traversal algorithms to solve our problem:
 Imagine that you get stuck in a maze like this.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img3.png" alt="">
 </figure>
 
 You have to get out somehow. There might be multiple routes from your starting position to the exit. The natural approach to getting out of the maze is to try all the paths.
@@ -108,7 +108,7 @@ Imagine you need to simulate the spread of the disease through this network. The
 Now you iterate over the people they are in contact with. Some will catch the disease. Now iterate over all of them. Give the people they're in contact with the disease too, unless they've already had it. Keep going until you've infected everyone, or you've infected your target. Then you're done. That's how breadth-first-search works.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img-4.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img4.png" alt="">
 </figure>
 
 The BFS search algorithm explores vertices layer by layer starting at the very first vertex and only moving on to the next layer once all vertices on the current layer have been processed.
@@ -140,7 +140,7 @@ Looking at the time complexities of the two algorithms, we can't really make out
 Let's look at the following example.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img-5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img5.png" alt="">
 </figure>
 
 Suppose we want to find out the shortest path from the node 8 to 10. Let's look at the nodes that DFS and BFS explore before reaching the destination.
@@ -197,7 +197,7 @@ _We are given a starting string (read source vertext) eg:- "AACCGGTT" and we hav
 Try and solve this problem on your own before looking at the solution below.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img-6.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/deep-dive-graph-traversals/img6.png" alt="">
 </figure>
 
 If you try to solve it using DFS, you will surely come up with a solution, but there is a test case(s) that will exceed the allotted time limit on the LeetCode platform. That's because of the problem described before as to why DFS takes so long (process 7 nodes as opposed to 3 in BFS) to reach the destination vertex.

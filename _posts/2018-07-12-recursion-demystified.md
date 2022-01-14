@@ -26,14 +26,14 @@ How do you explain recursion to a 4 year old? This is a pretty famous interview 
 If you are as clever as I am 🤓🤓, you would explain recursion to someone one year younger than you. Have them explain recursion to someone one year younger than them. Continue until you have a 5 year old explaining recursion to a 4 year old. Done. [Source: [reddit](https://www.reddit.com/r/programmerchat/comments/3ua9ie/how_would_you_explain_recursion_to_a_6_year_old/)].
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-2.gif" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img2.gif" alt="">
 </figure>
 
 In programming terms, recursion is
 
 > A function calling itself.
 
-<script src="https://gist.github.com/edorado93/e37127955dee6041a864337d1297a153#file-function-calling-itself-py"></script>
+<script src="https://gist.github.com/edorado93/e37127955dee6041a864337d1297a153.js"></script>
 
 The above function does no useful work as such, but it does demonstrate recursion. The recursive relation above would be
 
@@ -48,7 +48,7 @@ Essentially, we delay the execution of the current state of the function until a
 The compiler keeps on saving the state of the function call now and then moves onto the next function call and so on. So, the compiler saves function states onto a stack and uses that for computations and backtracking.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img3.png" alt="">
   <figcaption>Recursion stack of a set of function calls.</figcaption>
 </figure>
 
@@ -77,12 +77,12 @@ factorial(N) = N * factorial(N - 1)
 It’s like offloading the computation to another function call operating on a smaller version of the original problem. Let’s see how this relation would unfold to verify if the solution here matches the one provided by the `for` loop.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-4.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img4.png" alt="">
   <figcaption>Showing the steps from top to bottom for the factorial recursive function.</figcaption>
 </figure>
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img5.png" alt="">
   <figcaption>Verification that the recursive function defined produces the correct result.</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ factorial(N) = N * factorial(N - 1)
 
 is indeed correct. Have a look at the Python code snippet used to find the factorial of a function, recursively.
 
-<script src="https://gist.github.com/edorado93/a87fa4fe17c0c8ee3815b7859a0cd13c#file-factorial_recursive-py"></script>
+<script src="https://gist.github.com/edorado93/a87fa4fe17c0c8ee3815b7859a0cd13c.js"></script>
 
 This example was pretty simple. Let us consider a slightly bigger but standard example to demonstrate the concept of recursion.
 
@@ -115,7 +115,7 @@ where F(1) = F(2) = 1
 
 Clearly, this definition of the fibonacci sequence is recursive in nature, since the n^th fibonacci number is dependent upon the previous two fibonacci numbers. This means dividing the problem into smaller subproblems, and hence recursion. Have a look at the code for this:
 
-<script src="https://gist.github.com/edorado93/62631e1b7e4081c677db31dbfd141732#file-fibonacci-recursive-py"></script>
+<script src="https://gist.github.com/edorado93/62631e1b7e4081c677db31dbfd141732.js"></script>
 
 Every recursive problem must have two necessary things:
 
@@ -123,7 +123,7 @@ Every recursive problem must have two necessary things:
 2.  A recursion tree that showcases the first few, if not all calls to the function under consideration. Have a look at the recursion tree for the fibonacci sequences’ recursive relation.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-6.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img6.png" alt="">
   <figcaption>Recursion tree showing the sequence of calls for the fibonacci recurrence relation.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ I strongly believe in solving umpteen number of examples for any given topic in 
 To keep things simple for this example, we will only consider a binary tree. So, a binary tree is a tree data structure in which each node has at most two children. One node of the tree is designated as the root of the tree, for example:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-7.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img7.png" alt="">
   <figcaption>A Tree rooted at ‘A’ with its height and the corresponding path highlighted.</figcaption>
 </figure>
 
@@ -155,7 +155,7 @@ So, for the example diagram displayed above, considering that the node labelled 
 Now, forget about the entire tree and just focus on the portions highlighted in the diagram below.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-8.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img8.png" alt="">
   <figcaption>Tree rooted at node A and it’s two subtrees with their respective heights.</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ height(root) = max(height(root.left), height(root.right)) + 1
 
 So, that’s the recursive definition of the height of a **binary** tree. The focus is on binary here, because we used just two children of the node `root` represented by `root.left` and `root.right.` But, it is easy to extend this recursive relation to an n-ary tree. Let’s take a look at this in code.
 
-<script src="https://gist.github.com/edorado93/87de419cc4c84cb7c48a7c44b2c8ebf0#file-binary-tree-height-py"></script>
+<script src="https://gist.github.com/edorado93/87de419cc4c84cb7c48a7c44b2c8ebf0.js"></script>
 
 The problem here was greatly simplified because we let recursion do all the heavy lifting for us. We simply used **optimal** answers for our subproblems to find a solution to our original problem.
 
@@ -188,7 +188,7 @@ The problem is itself very self explanatory. Given the root of a binary tree, we
 Take a look at the diagram below.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-9.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img9.png" alt="">
 </figure>
 
 The diagram says it all. We already know that a tree can be broken down into smaller subtrees. Here again, we can ask ourselves,
@@ -205,7 +205,7 @@ number_of_nodes(root) = number_of_nodes(root.left) + number_of_nodes(right) + 1
 
 If you look at this recursion and the previous one, you will find that they are extremely similar. The only thing that is varying is what we do with the information we obtained from our subproblems and how we combined them to get some answer.
 
-<script src="https://gist.github.com/edorado93/97cfaa0d09e9139c0710dae50c895b2e#file-number_of_nodes-py"></script>
+<script src="https://gist.github.com/edorado93/97cfaa0d09e9139c0710dae50c895b2e.js"></script>
 
 Now that we have seen a couple of easy examples with a binary tree, let’s move onto something less trivial.
 
@@ -224,7 +224,7 @@ It’s possible that a lot of you are familiar with the [Divide and Conquer para
 The idea here is to break it down into subproblems.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-10.gif" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img10.gif" alt="">
 </figure>
 
 That’s what the article is about right ? 😛
@@ -240,7 +240,7 @@ Now, the beauty about recursion is, you don’t need to worry about how we will 
 
 Let’s go through the code:
 
-<script src="https://gist.github.com/edorado93/35a3f34c1c13e736d717eb92c4c7073e#file-merge-sort-step1-py"></script>
+<script src="https://gist.github.com/edorado93/35a3f34c1c13e736d717eb92c4c7073e.js"></script>
 
 At this point, we trusted and relied on our good friend recursion and assumed that `left_sorted_half` and `right_sorted_half` would in fact contain the two sorted halves of the original array.
 
@@ -277,7 +277,7 @@ Here we have two pointers (fingers), and we position them at the start of the in
 
 So, the combined code for merge-sort is as follows:
 
-<script src="https://gist.github.com/edorado93/2ddf8ef17df8c6d1b54d2d6973cbacec#file-merge-sort-complete-py"></script>
+<script src="https://gist.github.com/edorado93/2ddf8ef17df8c6d1b54d2d6973cbacec.js"></script>
 
 We will do one final question using recursion and trust me, it’s a tough one and a pretty confusing one. But before moving onto that, I will iterate the steps I follow whenever I have to think of a recursive solution to a problem.
 
@@ -286,20 +286,20 @@ We will do one final question using recursion and trust me, it’s a tough one a
 1.  Try and break down the problem into subproblems.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-11.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img11.png" alt="">
   <figcaption>Source: [https://www.weheartswift.com/compute-2-power-n/](https://www.weheartswift.com/compute-2-power-n/).</figcaption>
 </figure>
 
 2. Once you have the subproblems figured out, think about what information from the call to the subproblems can you use to solve the task at hand. For example, the factorial of `N — 1` to find the factorial of `N` , height of the left and right subtrees to find the height of the main tree, and so on.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-12.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img12.png" alt="">
 </figure>
 
 3. Keep calm and trust recursion! Assume that your recursive calls to the subproblems will return the information you need in the most optimal fashion.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-13.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img13.png" alt="">
 </figure>
 
 4. The final step in this process is actually using information we just got from the subproblems to find the solution to the main problem. Once you have that, you’re ready to code up your recursive solution.
@@ -311,7 +311,7 @@ Now that we have all the steps lined up, let’s move on to our final problem in
 Let’s look at what the question is asking us to do here. Consider the following tree.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-14.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img14.png" alt="">
   <figcaption>Example tree showing the expected output of our program for the various nodes.</figcaption>
 </figure>
 
@@ -346,7 +346,7 @@ This is a much simpler problem to tackle recursively and would prove to be usefu
 Consider the following simple tree.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-15.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img15.png" alt="">
   <figcaption>The simple tree we would consider for now. Also mentioned are two values we would be computing for every node.</figcaption>
 </figure>
 
@@ -382,7 +382,7 @@ A --> (C --> D --> F) (Path containing 3 edges, hence sum of distances = 3)
 Except for the first path `A → C`, all the others are the same as the ones for the node C, except that we have simply changed all of them and incorporated one extra node `A`.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-16.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img16.png" alt="">
   <figcaption>Sum of distances for the node A along with contribution from the node C.</figcaption>
 </figure>
 
@@ -418,7 +418,7 @@ The main thing here is `N-Paths[C] + Sum-Dist[C]` . We sum these up because all 
 
 Hence the tuple corresponding to A = (5, 9). The Python code for the algorithm we discussed above is as follows:
 
-<script src="https://gist.github.com/edorado93/f89850fc7353c7662fac133ebd49c793#file-sum-distances-down-simple-py"></script>
+<script src="https://gist.github.com/edorado93/f89850fc7353c7662fac133ebd49c793.js"></script>
 
 ### The Curious Case of the Visited Dictionary :/
 
@@ -436,7 +436,7 @@ If you’ve paid attention til now, you know that we are dealing with a `tree` h
 The definition of a tree data structure doesn’t allow cycles to exist. If a cycle exists in the structure, then it is no longer a tree, it becomes a graph. In a tree, there is exactly one path between any two pair of vertices. A cycle would mean there is more than one path between a pair of vertices. Look at the figures below.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-17.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img17.png" alt="">
   <figcaption>Tree vs Graph. Showing the cycle.</figcaption>
 </figure>
 
@@ -451,7 +451,7 @@ However, if you’ve read the problem statement clearly, it does not state anyth
 That means that there is no designated root for the tree given in the question. This could mean that a given tree can be visualized and processed in so many different ways depending upon what we consider as the root. Have a look at multiple structures for the same tree but with different root nodes.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-18.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img18.png" alt="">
   <figcaption>Multiple orientations of the same tree with different roots.</figcaption>
 </figure>
 
@@ -459,13 +459,13 @@ So many different interpretations and parent child relationships are possible fo
 
 So, we start with the node `0` and do a DFS traversal of the given structure. In the process we fix the parent child relationships. Given the edges in the problem, we construct an undirected graph-like structure which we convert to the tree structure. Taking a look at the code should clear up some of your doubts:
 
-<script src="https://gist.github.com/edorado93/ecbea2efcb9a3c87249e4444f35e68fb#file-graph-preprocess-to-tree-py"></script>
+<script src="https://gist.github.com/edorado93/ecbea2efcb9a3c87249e4444f35e68fb.js"></script>
 
 Every node would have one parent. The root won’t have any parent, and the way this logic is, the node `0` would become the root of our tree. Note that we are not doing this process separately and then calculating the `sum of distances downwards`. Given a tree, we were trying to find, for every node, the simplified sum of distances for the tree rooted at that node.
 
 So, the conversion from the graph to the tree happens in one single iteration along with finding out the sum of distances downwards for each and every node.
 
-<script src="https://gist.github.com/edorado93/f89850fc7353c7662fac133ebd49c793#file-sum-distances-down-simple-py"></script>
+<script src="https://gist.github.com/edorado93/f89850fc7353c7662fac133ebd49c793.js"></script>
 
 I posted the code again so that the `visited` dictionary makes much more sense now. So, one single recursion doing all that for us. Nice!
 
@@ -476,7 +476,7 @@ Now that we have our tree structure defined, and also the values of `sum of dist
 How do we do that? It’s best to explain this algorithm with the help of an example. So we will consider the tree below and we will dry run the algorithm for a single node. Let’s have a look at the tree we will be considering.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-19.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img19.png" alt="">
   <figcaption>The tree we will be considering for our explanation moving on.</figcaption>
 </figure>
 
@@ -488,7 +488,7 @@ The node for which we want to find the sum of distances is `4`. Now, if you reme
 Let’s look at the annotated version of the above tree. The tree is annotated with tuples `(distances_down, number_of_paths_down)` .
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-20.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img20.png" alt="">
   <figcaption>Example tree with annotated values for all nodes.</figcaption>
 </figure>
 
@@ -501,7 +501,7 @@ Let us assume that we have already computed the answer for the parent node of `4
 Let’s rotate the given tree and visualize it in a way where `2` is the root of the tree essentially.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-21.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img21.png" alt="">
   <figcaption>Rotated tree showing the tree rooted at 4 should be removed.</figcaption>
 </figure>
 
@@ -533,7 +533,7 @@ N - 1 - distances_down[4] = 8 - 1 - 1 = 6
 
 If you remember this from the function we defined earlier, you will notice that the contribution of a `child` node to the two values `distances_down and number_of_paths_down` is `n_paths + 1` and `n_paths + s_paths + 1` respectively. Naturally, that is what we subtract to obtain the remaining tree.
 
-<script src="https://gist.github.com/edorado93/b7076f6f2cda42a672c8c8e75531e0d0#file-part-of-initial-recursion-sum-of-distances-py"></script>
+<script src="https://gist.github.com/edorado93/b7076f6f2cda42a672c8c8e75531e0d0.js"></script>
 
 `sod(4)` represents the sum of edges on all the paths originating at the node `4` in the tree above. Let’s see how we can find this out using the information we have calculated till now.
 
@@ -554,18 +554,18 @@ sod(4) = own_answer + (N - 1 - distances_down[4]) + (sod(2) - 1 - distances_down
 ```
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-22.gif" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img22.gif" alt="">
   <figcaption>Source: [https://giphy.com/gifs/angry-confused-love-life-FX1ZGci9qPM3u](https://giphy.com/gifs/angry-confused-love-life-FX1ZGci9qPM3u)</figcaption>
 </figure>
 
 Before you go bonkers and start doing this, let’s look at the code and bring together all of the things we discussed in the example above.
 
-<script src="https://gist.github.com/edorado93/99d8fcffc5fbdd7957e488096ddfd59b#file-sod-values-py"></script>
+<script src="https://gist.github.com/edorado93/99d8fcffc5fbdd7957e488096ddfd59b.js"></script>
 
 The recursive relation for this portion is as follows:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-23.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img23.png" alt="">
   <figcaption>Recursive relation for Sum of Distances, in its totality.</figcaption>
 </figure>
 
@@ -576,7 +576,7 @@ Yes, indeed you did!
 Consider the following example tree:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-24.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img24.png" alt="">
   <figcaption>Example of a skewed tree, also recursive calls for the vertex 5.</figcaption>
 </figure>
 
@@ -596,7 +596,7 @@ Essentially, the recursion is based on the parent of a node, and multiple nodes 
 If you’ve managed to read the article this far (not necessarily in one stretch 😛), you’re awesome 😃.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img-25.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/recursion-de/img25.jpeg" alt="">
   <figcaption>Source: [http://doodlecats.com/youre-awesome](http://doodlecats.com/youre-awesome).</figcaption>
 </figure>
 

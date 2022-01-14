@@ -104,13 +104,13 @@ We will initialize the BFS queue with the given location as the starting point. 
 
 Let’s look at the code to initialize our graph data structure. We also need to look at how the BFS algorithm would end up giving us all the destinations reachable from a given source.
 
-<script src="https://gist.github.com/edorado93/c0ac66eefc34c3d011c9d5d2ea292716#file-flight-network-ipynb"></script>
+<script src="https://gist.github.com/edorado93/c0ac66eefc34c3d011c9d5d2ea292716.js"></script>
 
 Some Random set of flights with source, destination and their prices.
 
 Now that we have a good idea about how the graph is to be initialized, let’s look at the code for the BFS algorithm.
 
-<script src="https://gist.github.com/edorado93/61d9089e3b7da91c4c528b3bcc736be9#file-bfs-py"></script>
+<script src="https://gist.github.com/edorado93/61d9089e3b7da91c4c528b3bcc736be9.js"></script>
 
 Performing `bfs` on the city of Los Angeles would give us the following destinations which are reachable:
 
@@ -157,7 +157,7 @@ Let’s look at how we can solve this. So, given the graph of flight networks, a
 
 Have a look at the code for solving this problem:
 
-<script src="https://gist.github.com/edorado93/ce915542048558003d4395954ae5aa87#file-level-order-traversal-1-ipynb"></script>
+<script src="https://gist.github.com/edorado93/ce915542048558003d4395954ae5aa87.js"></script>
 
 This might not be the best way to go about solving this problem at scale — the largest memory constraint would be due to the nodes currently present in the queue.
 
@@ -169,11 +169,11 @@ There are multiple ways to implement the algorithm. Also, each of them varies in
 
 We want to see the maximum memory consumed by the queue at any point in time during the level order traversal. Before that, let’s construct a random flight network with random prices.
 
-<script src="https://gist.github.com/edorado93/12e604c3328ddfb8544ffbbeeb14349b#file-random-flight-network-py"></script>
+<script src="https://gist.github.com/edorado93/12e604c3328ddfb8544ffbbeeb14349b.js"></script>
 
 Now let us look at the implementation of level order traversal.
 
-<script src="https://gist.github.com/edorado93/713b7dc200b6cfb614b96cde4b01a4d1#file-naive_level_order-py"></script>
+<script src="https://gist.github.com/edorado93/713b7dc200b6cfb614b96cde4b01a4d1.js"></script>
 
 This above is the easiest and most straightforward implementation of the level order traversal algorithm.
 
@@ -183,7 +183,7 @@ The level information for our use case would mean the number of stops from the s
 
 It turns out that we can do better as far as memory consumption of the program is concerned. Let us look at a slightly better approach to doing level order traversal.
 
-<script src="https://gist.github.com/edorado93/752ccbd0cd09818967ca8643874a1ea4#file-none-level-order-traversal-py"></script>
+<script src="https://gist.github.com/edorado93/752ccbd0cd09818967ca8643874a1ea4.js"></script>
 
 The idea here is that we don’t store any additional information with the nodes being pushed into the queue. We use a `None` object to mark the end of a given level. We don’t know the size of any level before hand except for the first level, which just has our `source` node.
 
@@ -243,13 +243,13 @@ while queue is not empty {
 
 And here is the code for the same.
 
-<script src="https://gist.github.com/edorado93/c656c837cfa21115e8f05aaaef0056e9#file-queue-size-level-order-traversal-py"></script>
+<script src="https://gist.github.com/edorado93/c656c837cfa21115e8f05aaaef0056e9.js"></script>
 
 The pseudo code is self explanatory. We essentially do away with the need for an extra `None` element per level and instead make use of the queue’s size to change levels. This would also lead to improvement over the last method, but how much?
 
 Have a look at the following Jupyter Notebook to see the memory difference between the three methods.
 
-<script src="https://gist.github.com/edorado93/34dbb527af37ba4d9da8076d9039767c#file-memory-consumption-level-order-ipynb"></script>
+<script src="https://gist.github.com/edorado93/34dbb527af37ba4d9da8076d9039767c.js"></script>
 
 * We track the maximum size of the queue at any time by considering the sum of sizes of individual queue elements.
 * According to Python’s documentation, `sys.getsizeof` returns the object’s pointer or reference’s size in bytes. So, we saved almost 4.4Kb space `(20224 — 15800 bytes)` by switching to the `None` method from the original level order traversal method. This is just the memory savings for this random example, and we went only until the 5th level in the traversal.
@@ -337,7 +337,7 @@ def bfs(source, destination, K):
 
 This again is level order traversal and the approach being used here is the one that makes use of the queue’s size at every level. Let us look at a commented version of the code to solve this problem.
 
-<script src="https://gist.github.com/edorado93/4655b45ae1d93e95390f5bcee80116cf#file-cheapest-flight-with-k-stops-bfs-py"></script>
+<script src="https://gist.github.com/edorado93/4655b45ae1d93e95390f5bcee80116cf.js"></script>
 
 > Essentially, we keep track of the minimum distance of every node from the given source. The minimum distance for the source would be 0 and +inf for all others initially.
 

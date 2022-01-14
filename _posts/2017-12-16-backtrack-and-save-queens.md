@@ -44,7 +44,7 @@ The queen happens to be the most powerful piece on the chess board, primarily be
 The queen can move in 8 different directions, as illustrated in the image below:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-1.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img1.jpeg" alt="">
   <figcaption>8 directions for the Queen's movement.</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ while there is life on earth:
 ```
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-2.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img2.jpeg" alt="">
 </figure>
 
 We've got an 8x8 chessboard, which means we have 64 different spots to place the queens. We need to calculate C(64, 8), or the [number of combinations](http://www.mathwords.com/c/combination_formula.htm) of 64 objects, taken 8 at a time.
@@ -84,7 +84,7 @@ We get around 4.5 billion different combinations of placing the 8 queens on an 8
 The brute-force algorithm is as follows:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-9.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img9.png" alt="">
 </figure>
 
 That's a lot of permutations to check for a standard processor. We could use some sort of multi-processing solution (because checking one permutation is independent of another one).
@@ -96,7 +96,7 @@ But why do that when we have better algorithms to solve this problem?
 We can do better than the naïve brute force solution for this problem. Consider the following pseudocode for the backtracking based solution:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-10.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img10.png" alt="">
 </figure>
 
 The pseudocode looks simple enough, and you can checkout the python based code for this [here](http://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/). We won't be looking at a description for the backtracking algorithm here.
@@ -105,13 +105,13 @@ I would however, like to  discuss an optimization to reduce the time complexity 
 
 An important piece of the algorithm is where we have to check if a queen can be placed in a cell `[i, j]`. This step takes a long time. Let's look at a brute-force way to do this, and then at an optimized version.
 
-<script src="https://gist.github.com/edorado93/6c0c29435574f70006a4f548bd5e5d49#file-safety-checker-n-queens-py"></script>
+<script src="https://gist.github.com/edorado93/6c0c29435574f70006a4f548bd5e5d49.js"></script>
 
 This has a [time complexity](https://www.youtube.com/watch?v=KSNx22U4uWE) of O(N), and this will be called multiple times for every cell on the board.
 
 We can however, make use of some additional data structures to speed up the validity check for placing a queen on a cell `[i, j]`. This will bring down the complexity to `O(1)` — in other words, constant time. This is a huge reduction!.
 
-<script src="https://gist.github.com/edorado93/3b0cdbd4a3070544fbc332ce7b25175b#file-optimised-safety-checker-n-queens-py"></script>
+<script src="https://gist.github.com/edorado93/3b0cdbd4a3070544fbc332ce7b25175b.js"></script>
 
 The keys points in this piece of code are the following :
 
@@ -138,12 +138,12 @@ That gives a lot less options to try and to find the solutions for our problem.
 Let's look at the pseudo-code for this approach:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-11.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img11.png" alt="">
 </figure>
 
 For greater clarity, let's look at the code as well:
 
-<script src="https://gist.github.com/edorado93/814d06ba5a9fa14fe248ce950633c057#file-permutations-solver-py"></script>
+<script src="https://gist.github.com/edorado93/814d06ba5a9fa14fe248ce950633c057.js"></script>
 
 **Note:** `board[i]` stores the column number where a queen has been placed in row `i.` Hence, the cell value is given by `(i, board[i])`.
 {: .notice--info}
@@ -164,10 +164,10 @@ But thankfully, I found this amazing [blog post](http://gregtrowbridge.com/a-bit
 
 The best way to go about explaining this algorithm is by putting up the code first 😉
 
-<script src="https://gist.github.com/edorado93/3adb5593de64068f1cdd1afabe94e1fd#file-n-queens-bit-magic-py"></script>
+<script src="https://gist.github.com/edorado93/3adb5593de64068f1cdd1afabe94e1fd.js"></script>
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-3.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img3.jpeg" alt="">
 </figure>
 
 The algorithm works using the same basic idea that was discussed before. We only need to check three things before placing a queen on a certain square:
@@ -200,7 +200,7 @@ Let’s look at the picture below:
 * `rd` = right_diagonal
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-4.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img4.png" alt="">
 </figure>
 
 Ignore the `poss` variable for now. We’ll get to it later on.
@@ -269,7 +269,7 @@ The right-diagonal is moving from right top to bottom left. Left-shift on the bi
 For a greater clarity, try doing this operation on a paper:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img5.png" alt="">
 </figure>
 
 We start with 0s for all the three variables, meaning that all the positions are available in the first row for placing the queens.
@@ -281,19 +281,19 @@ Now comes the fun part (well, something to amaze you 😆), Speed Comparisons.
 Let’s look at the stats for a tool that Google built for solving the N-Queens.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-6.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img6.png" alt="">
 </figure>
 
 Following are the stats for the 4 different approaches we discussed for the N-Queens:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-7.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img7.png" alt="">
   <figcaption>All the times are in ms</figcaption>
 </figure>
 
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img-8.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/queens/img8.png" alt="">
   <figcaption>All the times are in ms</figcaption>
 </figure>
 

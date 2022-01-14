@@ -46,7 +46,7 @@ What if an inexperienced barber mistakenly cuts my skin ?
 As usual, there's a huge line in waiting. Ahhh, the dreaded wait.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-1.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img1.jpeg" alt="">
 </figure>
 
 As I wait patiently for my turn to come, I constantly think about whom I want to cut my hair.
@@ -82,7 +82,7 @@ Somehow, nobody seems to grasp this perfectly. What they instead hear is
 > "Medium haircut"
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-2.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img2.jpeg" alt="">
   <figcaption>Source: [https://smartblogger.com/fear-openings/](https://smartblogger.com/fear-openings/)</figcaption>
 </figure>
 
@@ -105,14 +105,14 @@ Now this is the moment where my heart starts pounding.
 "Buckle up Sachin! This is it."
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-3.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img3.jpeg" alt="">
   <figcaption>Source: [https://www.thoughtco.com/using-regular-motor-oil-chainsaw-bar-1342724](https://www.thoughtco.com/using-regular-motor-oil-chainsaw-bar-1342724)</figcaption>
 </figure>
 
 The barber brings a small trimmer towards me. But, what I see is this.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-4.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img4.jpeg" alt="">
   <figcaption>Source: [https://makeameme.org/meme/phew-thank-goodness](https://makeameme.org/meme/phew-thank-goodness)</figcaption>
 </figure>
 Aaaaaaaaand. Zap!
@@ -126,7 +126,7 @@ Sometimes, its a no and I'm like "Phew!" . But the haircut session is not over y
 After about 10 minutes of using the trimmer to butcher my hair, the barber decides to finally use a scissor and I feel a sigh of relief.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-5.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img5.jpeg" alt="">
   <figcaption>Source: [https://www.pinterest.com/pin/748301294306046836/?lp=true](https://www.pinterest.com/pin/748301294306046836/?lp=true)</figcaption>
 </figure>
 
@@ -147,7 +147,7 @@ Finally, the hair cut is done. And I feel like its a disaster. As usual.
 I am never happy with the hair cut. I have to put up a fake smile though.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-6.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img6.jpeg" alt="">
   <figcaption>Source: [https://www.lifesitenews.com/blogs/as-absurd-as-it-sounds-this-is-how-we-picked-up-our-abortionist-on-abortion](https://www.lifesitenews.com/blogs/as-absurd-as-it-sounds-this-is-how-we-picked-up-our-abortionist-on-abortion)</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ I pay the barber and I'm on my way back thinking about what I can change the nex
 This is me walking out of the barber shop.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img-7.jpeg" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img7.jpeg" alt="">
 </figure>
 
 

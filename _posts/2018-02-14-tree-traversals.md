@@ -81,13 +81,13 @@ In our case, the keys will be the names of the students.
 Consider the following example to see how a binary search tree is constructed. This should lend greater clarity to the data structure.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-1.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img1.png" alt="">
 </figure>
 
 Constructing a Binary Search Tree is not enough. We need to make sure it is [balanced](http://www.stoimen.com/blog/2012/07/03/computer-algorithms-balancing-a-binary-search-tree/). The reason we say that a Binary Search Tree needs to be balanced is that, if it is not balanced, then we can have something like this:
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-2.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img2.png" alt="">
   <figcaption>A left skewed binary search tree.</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ Suppose that there were a million students taking the test. If our binary search
 > Hence, for 1 million nodes, the maximum number of nodes to be scanned would be just 14.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-3.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img3.png" alt="">
 </figure>
 
 That’s a lot of complexity reduction simply by arranging the data in a certain manner. That is the advantage of representing data in a balanced Binary Search Tree.
@@ -133,7 +133,7 @@ There are two different cases that we need to handle when finding the in-order s
 The first case is when the right child exists for the node whose in-order successor we are trying to find. Consider the following example.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-4.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img4.png" alt="">
 </figure>
 
 Here we wanted to find the in-order successor of the highlighted node 8. Since it has a right child, the in-order successor would be the leftmost node in the tree with a right child, or 15 as the root. So that node would be 10 in this case.
@@ -143,7 +143,7 @@ Here we wanted to find the in-order successor of the highlighted node 8. Since i
 The second case is when there is no right child.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-5.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img5.png" alt="">
 </figure>
 
 In this case, the in-order successor has two possibilities:
@@ -164,13 +164,13 @@ This is the exact reverse of the previous case.
 Again, we need to handle two different cases when finding the in-order predecessor of a node in a BST. Look at the following diagrams and try to relate the two cases being referred to here.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-6.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img6.png" alt="">
 </figure>
 
 This is the case where the node has a left child. We need to find the rightmost child of the tree rooted at this left child — the rightmost node in the tree rooted at 2.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img-7.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/tree-traversals/img7.png" alt="">
 </figure>
 
 No left child. So we need to find the parent.
