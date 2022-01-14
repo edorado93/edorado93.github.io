@@ -7,6 +7,9 @@
   <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
 {% endif %}
 
+<!-- Clay CSS https://github.com/codeAdrian/clay.css -->
+<link rel="stylesheet" href="https://unpkg.com/claymorphism-css/dist/clay.css" />
+
 {% unless site.atom_feed.hide %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 {% endunless %}

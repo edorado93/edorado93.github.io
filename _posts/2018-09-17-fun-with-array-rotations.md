@@ -1,7 +1,7 @@
 ---
 title: "Fun with array rotations"
 header:
-  overlay_image: {{ site.url }}{{ site.baseurl }}/assets/images/array-rotations/header.gif
+  overlay_image: /assets/images/array-rotations/header.gif
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Fun%20With%20Array%20Rotations.png
 excerpt: "Rotate an array, they said. It will be fun, they said."
@@ -301,7 +301,7 @@ Take a look at the problem statement [here](https://leetcode.com/problems/orderl
 Let’s look at some of the possible string rotations first before getting to the solution. The string we will consider is `baaca` and K = 3 that means we can select *any* of the first three characters and then remove it from its location, add it to the very end and finally shift all the characters one position to the left to accommodate this new element in the end.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/array-rotations/img18.gif" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/array-rotations/img18.png" alt="">
 </figure>
 
 Assume the string has the following characters: `a[0], a[1], a[2] … a[n-1]` and we want to swap some position i (i >= 0 && i < n — 1) with position i+1, or swap a[i] and a[i+1]. The claim is that we can achieve this for any two adjacent elements in the string by using rotations on the string. e.g.:- Say the string consists of 5 characters and we want to swap `a[2] and a[3]` , here’s how we can achieve this with array rotations.

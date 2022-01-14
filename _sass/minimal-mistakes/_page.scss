@@ -20,13 +20,25 @@
 }
 
 applause-button {
-  width: 80px;
-  height: 80px;
+  width: 5em;
+  height: 5em;
   margin: 0 auto;
 
   .count-container {
     color: inherit;
   }
+}
+
+.applause {
+  --clay-background: #ffe84547;
+  float: right;
+  width: 45%;
+}
+
+.subscribe {
+  --clay-background: #ffe84547;
+  float: left;
+  width: 50%;
 }
 
 body {

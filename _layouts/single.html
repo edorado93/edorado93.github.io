@@ -45,11 +45,47 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
         {% if page.applause_button %}
-          <applause-button class="mb6" multiclap="true" 
-            color="{{ site.accent_color | default:'rgb(79,177,186)' }}"
-            url="{{ site.url }}{{ page.url }}" >
-          </applause-button>
+          <div class="clay applause">
+            <div style="margin: 1em;">
+              Don't want the subscription but liked the article? Well, go ahead and smash that like button like it's Covid!
+            </div>
+            <div style="text-align: center; margin-top: 2em;">
+              <applause-button class="mb6" multiclap="true" 
+              color="{{ site.accent_color | default:'rgb(79,177,186)' }}"
+              url="{{ site.url }}{{ page.url }}" >
+            </applause-button>
+            </div>
+            <div style="text-align: center;">
+              <img src="/assets/images/clap.gif" style="width: 90%; margin-top: 1em; margin-bottom: 1em; border-radius: 1.5em;" />
+            </div>
+          </div>
         {% endif %}
+
+        <form class="subscribe clay" action="https://tinyletter.com/bruteforced" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/bruteforced', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+          <div>
+              <div>
+                If you found this article exciting and want to read more like this,
+                the best way is to subscribe to my newsletter.
+              </div>
+              
+              <div style="margin-top: 1em;">
+                So, which <a href="https://en.wikipedia.org/wiki/Red_pill_and_blue_pill">pill</a> will you take?
+              </div>
+              
+              <div style="text-align: center;">
+                <img src="/assets/images/pill.jpg" style="width: 90%; margin-top: 1em; margin-bottom: 1em; border-radius: 1.5em;" />
+              </div>
+          </div>
+          <label for="tlemail">Enter your email address</label>
+          <input type="text" size="20" name="email" id="tlemail" />
+          <input type="hidden" value="1" name="embed"/>
+          <input type="submit" class="btn--info btn--large" value="Ooh, Blue looks tempting" />
+          <input type="submit" class="btn--danger btn--large" value="Danger, danger, I'll take Red" />
+          <p>
+              <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
+          </p>
+      </form>
+      
       </section>
 
       <footer class="page__meta">

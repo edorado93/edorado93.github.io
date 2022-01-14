@@ -10,29 +10,29 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "[Unsplash](https://unsplash.com)"
 photography_gallery:
-  - url: /assets/images/intro-blog/gallery-1.jpg
-    image_path: /assets/images/intro-blog/gallery-1.jpg
+  - url: /assets/images/intro-blog/gallery-1.JPG
+    image_path: /assets/images/intro-blog/gallery-1.JPG
     alt: "placeholder image 1"
-  - url: /assets/images/intro-blog/gallery-2.jpg
-    image_path: /assets/images/intro-blog/gallery-2.jpg
+  - url: /assets/images/intro-blog/gallery-2.JPG
+    image_path: /assets/images/intro-blog/gallery-2.JPG
     alt: "placeholder image 2"
-  - url: /assets/images/intro-blog/gallery-4.jpg
-    image_path: /assets/images/intro-blog/gallery-4.jpg
+  - url: /assets/images/intro-blog/gallery-4.JPG
+    image_path: /assets/images/intro-blog/gallery-4.JPG
     alt: "placeholder image 4"
-  - url: /assets/images/intro-blog/gallery-5.jpg
-    image_path: /assets/images/intro-blog/gallery-5.jpg
+  - url: /assets/images/intro-blog/gallery-5.JPG
+    image_path: /assets/images/intro-blog/gallery-5.JPG
     alt: "placeholder image 5"
-  - url: /assets/images/intro-blog/gallery-6.jpg
-    image_path: /assets/images/intro-blog/gallery-6.jpg
+  - url: /assets/images/intro-blog/gallery-6.JPG
+    image_path: /assets/images/intro-blog/gallery-6.JPG
     alt: "placeholder image 6"
-  - url: /assets/images/intro-blog/gallery-7.jpg
-    image_path: /assets/images/intro-blog/gallery-7.jpg
+  - url: /assets/images/intro-blog/gallery-7.JPG
+    image_path: /assets/images/intro-blog/gallery-7.JPG
     alt: "placeholder image 7"
-  - url: /assets/images/intro-blog/gallery-8.jpg
-    image_path: /assets/images/intro-blog/gallery-8.jpg
+  - url: /assets/images/intro-blog/gallery-8.JPG
+    image_path: /assets/images/intro-blog/gallery-8.JPG
     alt: "placeholder image 8"
-  - url: /assets/images/intro-blog/gallery-9.jpg
-    image_path: /assets/images/intro-blog/gallery-9.jpg
+  - url: /assets/images/intro-blog/gallery-9.JPG
+    image_path: /assets/images/intro-blog/gallery-9.JPG
     alt: "placeholder image 9"
 ---
 
