@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/tree-traversals/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Tree%20Traversals.png
+  collection: blog
 excerpt: "A class of lazy students trying to cheat on their exam."
 date: February 2, 2018
 show_date: true

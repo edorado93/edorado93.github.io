@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/dynamic-programming/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Change%20The%20Signs,%20A%20Codechef%20Problem.png
+  collection: blog
 excerpt: "How to use dynamic programming to solve a competitive programming question."
 date: June 1, 2018
 show_date: true

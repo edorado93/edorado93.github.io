@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/queens/header.jfif
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Backtrack%20And%20Save%20Some%20Queens.png
+  collection: blog
 excerpt: "Let's take a look at solving this classical backtracking problem."
 date: December 16, 2017
 show_date: true

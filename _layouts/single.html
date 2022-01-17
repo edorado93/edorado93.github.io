@@ -61,6 +61,7 @@ layout: default
           </div>
         {% endif %}
 
+        {% if page.subscribe %}
         <form class="subscribe clay" action="https://tinyletter.com/bruteforced" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/bruteforced', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
           <div>
               <div>
@@ -84,7 +85,8 @@ layout: default
           <p>
               <a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a>
           </p>
-      </form>
+        </form>
+      {% endif %}
       
       </section>
 

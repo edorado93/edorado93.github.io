@@ -3,6 +3,7 @@ title: "I need a haircut"
 header:
   image: /assets/images/haircut/header.png
   og_image: https://og-image.vercel.app/I%20Need%20A%20%Haircut!.png
+  collection: blog
 excerpt: "The fear, the anxiety, the anger, the maybe happiness when I get a haircut"
 date: May 15, 2018
 show_date: true

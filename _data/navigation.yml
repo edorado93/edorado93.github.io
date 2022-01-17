@@ -6,6 +6,8 @@ main:
     url: /blog
   - title: "System Design"
     url: /systemdesign/
+  - title: "Travel"
+    url: /travel/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

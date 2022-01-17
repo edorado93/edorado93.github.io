@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/deep-dive-graph-traversals/img1.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Load%20Testing%20With%20HAProxy%20Part%201.png
+  collection: blog
 excerpt: "An overview of the famous Depth-First Search and Breadth-First Search algorithms and their differences and use cases."
 date: December 10, 2017
 show_date: true

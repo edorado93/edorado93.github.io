@@ -149,7 +149,13 @@ footer:
 collections:
   systemdesign:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:title/
+  travel:
+    output: true
+    permalink: /:collection/:title/
+  blog:
+    output: true
+    permalink: /:collection/:title/
 
 # tags
 tags_archive:
@@ -223,7 +229,7 @@ sass:
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
-paginate_path: /blog/page:num/
+paginate_path: /page:num/
 timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -295,10 +301,22 @@ defaults:
       share: true
       related: true
       applause_button: true
+      subscribe: true
   # _systemdesign
   - scope:
       path: ""
       type: systemdesign
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _travel
+  - scope:
+      path: ""
+      type: travel
     values:
       layout: single
       author_profile: true

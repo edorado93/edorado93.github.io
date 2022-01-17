@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/life-lessons-header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Life%20Lessons%20From%20A%20young%20Software%20Engineer.png
+  collection: blog
 excerpt: "Lessons learnt by a young Software Engineer."
 date: March 4, 2016
 show_date: true

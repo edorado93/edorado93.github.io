@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/recursion-de/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Change%20The%20Signs,%20A%20Codechef%20Problem.png
+  collection: blog
 excerpt: "In order to understand recursion, you must first understand recursion."
 date: July 12, 2018
 show_date: true

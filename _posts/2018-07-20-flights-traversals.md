@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/flights-traversals/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Shortest%20Paths%20Using%20Breadth%20First%20Search.png
+  collection: blog
 excerpt: "Wait, we can use BFS for shortest paths too? Tell me more."
 date: July 20, 2018
 show_date: true

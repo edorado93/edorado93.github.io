@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/baby-lizard/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Solving%20The%20Baby%20Lizard%20Problem.png
+  collection: blog
 excerpt: "Using graph traversals and some tricks to approach a subtle twist on a classic backtracking problem."
 date: December 18, 2017
 show_date: true

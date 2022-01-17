@@ -4,6 +4,7 @@ header:
   overlay_image: /assets/images/array-rotations/header.gif
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Fun%20With%20Array%20Rotations.png
+  collection: blog
 excerpt: "Rotate an array, they said. It will be fun, they said."
 date: September 17, 2018
 show_date: true
