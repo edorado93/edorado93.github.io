@@ -7,7 +7,6 @@ header:
   collection: travel
 excerpt: "A travelouge and rant about my road trip from Seattle, Washington to the beautiful Crater Lake in Portland."
 date: January 1, 2022
-collection: travel
 show_date: true
 toc: true
 toc_label: "Content"

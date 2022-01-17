@@ -54,7 +54,7 @@ layout: archive
 
 <!-- Finally, based on the page number, obtain the set of posts to show -->
 {% assign posts_to_show = "" | split: ',' %}
-{% assign idx = 1 %}
+{% assign idx = 0 %}
 {% assign minus_one = pager_current_page | minus: 1 %}
 {% assign starting_idx = site.paginate | times: minus_one %}
 {% for post in total_matching_posts %}
