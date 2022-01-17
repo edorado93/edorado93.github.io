@@ -20,9 +20,11 @@
 }
 
 applause-button {
-  width: 5em;
-  height: 5em;
-  margin: 0 auto;
+  width: 3em;
+  height: 3em;
+  margin-top: 2em;
+  margin-left: 4em;
+  display: table-cell;
 
   .count-container {
     color: inherit;
@@ -36,9 +38,8 @@ applause-button {
 }
 
 .subscribe {
-  --clay-background: #ffe84547;
-  float: left;
-  width: 50%;
+  --clay-background: #e5bcd547;
+  --clay-border-radius: 1em;
 }
 
 body {
