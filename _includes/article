@@ -6,7 +6,7 @@
 {% endif %}
 
 {% assign title = article.title %}
-{% assign description = article.description | | truncate: 117%}
+{% assign description = article.description | truncate: 117%}
 
 {% if article.img %}
     {% assign card_image = article.img %}
@@ -14,8 +14,8 @@
     {% assign card_image = site.default_card_image_path | relative_url %}
     {% assign min = 1 %}
     {% assign max = site.default_card_image_number_of_images %}
-    {% assign diff = max | minus: min %}
-    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+    {% assign now = "now" | date: "%N" %}
+    {% assign randomNumber = now | modulo: max | plus: min %}
     {% assign card_image = card_image | append: "img" | append: randomNumber | append: ".png" %}
 {% endif %}
 

@@ -326,4 +326,4 @@ defaults:
       related: true
 
 default_card_image_path: /assets/images/article-cards/
-default_card_image_number_of_images: 6
+default_card_image_number_of_images: 11
