@@ -4,8 +4,8 @@ main:
     url: /
   - title: "Blog"
     url: /blog
-  - title: "System Design"
-    url: /systemdesign/
+  # - title: "System Design"
+  #   url: /systemdesign/
   - title: "Travel"
     url: /travel/
   # - title: "Sample Collections"

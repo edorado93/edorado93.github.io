@@ -36,8 +36,6 @@ photography_gallery:
     alt: "placeholder image 9"
 ---
 
-> Brute Force Algorithms are exactly what they sound [like](https://www.freecodecamp.org/news/brute-force-algorithms-explained/) – straightforward methods of solving a problem that rely on sheer computing power and trying every possibility rather than advanced techniques to improve efficiency.
-
 I'm Sachin and am so glad you tumbled onto my humble e-abode :) Feel free to take a tour and [let me know if you have any questions](mailto:sachinmalhotra1993@gmail.com).
 
 I run the Bruteforced blog which mainly contains editorials for interesting programming problems and my take on some famous algorithms and their use-cases. 
