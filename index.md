@@ -40,15 +40,13 @@ I'm Sachin and am so glad you tumbled onto my humble e-abode :) Feel free to tak
 
 I run the Bruteforced blog which mainly contains editorials for interesting programming problems and my take on some famous algorithms and their use-cases. 
 
-Additionally, I started writing about [System Design](/systemdesign) wherein I aim to cover a broad range of topics and try to explain things as if to a 5-year old :) 
-
-Head over to the various sections of the website based on what you're here for or -- \* put's on the shades \* -- get to know me a bit maybe?
+Head over to the various sections of the website based on what interests you or -- \* put's on the shades \* -- get to know me a bit maybe?
 
 ## whoami (he/him)
 
-I'm natively from India but have been living in the United States for the past 4 years now. 
+I'm natively from India but have been living in the United States for the past 5 years now. 
 
-Seattle, Washington has been my home-away-from-home (cringe much?) for the past 2 years or so! 
+Seattle, Washington has been my home-away-from-home (cringe much?) for the past 3 years or so! 
 
 Yes, it rains so much that you forget the sun ever shines. 
 {: .notice--info}

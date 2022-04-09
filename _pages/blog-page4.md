@@ -6,6 +6,6 @@ header:
   overlay_image: /assets/images/pages/blog-4.jpg
   overlay_filter: 0.5
 collection: blog
-permalink: /blog/page4
+permalink: /blog/page4/
 author_profile: true
 ---
