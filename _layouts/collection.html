@@ -1,0 +1,79 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<!-- {% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% include documents-collection.html collection=page.collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+</div> -->
+
+{% assign all_posts = site.posts %}
+
+<!-- Set the paginate path based on the collection name -->
+{% assign pager_paginate_path = page.collection | append: site.paginate_path %}
+
+<!-- Obtain the set of posts to based on collection -->
+{% assign total_matching_posts = "" | split: ',' %}
+{% for post in all_posts %}
+  {% if post.header.collection == page.collection %}
+    {% assign total_matching_posts = total_matching_posts | push: post %}
+  {% endif %}
+{% endfor %}
+
+<!-- Next, create the pagination variables to be used -->
+{% assign pager_num_posts = total_matching_posts.size %}
+{% assign pager_num_pages = pager_num_posts | divided_by: site.paginate %}
+{% assign rem = pager_num_posts | modulo: site.paginate %}
+{% if rem != 0 %}
+  {% assign pager_num_pages = pager_num_pages |  plus: 1 %}
+{% endif %}
+
+<!-- Assign the current page number based on the current url -->
+{% assign current_url_components = page.url | split: "/" %}
+{% assign pager_current_page = 1 %}
+{% for comp in current_url_components %}
+  {% if comp contains "page" %}
+		{% assign pager_current_page = comp | remove: "page" %}
+		{% assign pager_current_page = pager_current_page | plus: 0 %}
+	{% endif %}
+{% endfor %}
+
+<!-- Assign page number for "Previous". Keep it disabled for page:1  -->
+{% assign pager_previous_page = "" %}
+{% if pager_current_page > 1 %}
+  {% assign pager_previous_page = pager_current_page | minus: 1 %}
+{% endif %}
+
+<!-- Assign page number for "Next". Keep it disabled for last page  -->
+{% assign pager_next_page = "" %}
+{% unless pager_current_page >= pager_num_pages %}
+  {% assign pager_next_page = pager_current_page | plus: 1 %}
+{% endunless %}
+
+<!-- Finally, based on the page number, obtain the set of posts to show -->
+{% assign posts_to_show = "" | split: ',' %}
+{% assign idx = 0 %}
+{% assign minus_one = pager_current_page | minus: 1 %}
+{% assign starting_idx = site.paginate | times: minus_one %}
+{% for post in total_matching_posts %}
+  {% if idx >= starting_idx %}
+    {% assign posts_to_show = posts_to_show | push: post %}
+    {% if posts_to_show.size == site.paginate %}
+      {% break %} 
+    {% endif %}
+  {% endif %}
+  {% assign idx = idx | plus: 1 %}
+{% endfor %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts_to_show %}
+    {% if post.header.collection == page.collection %}
+      {% include archive-single.html type=entries_layout %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% include custom_paginator.html %}

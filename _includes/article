@@ -1,0 +1,35 @@
+
+{% if include.articleid %}
+    {% assign article = page[include.articleid] %}
+{% else %}
+    {% assign article = page.article %}
+{% endif %}
+
+{% assign title = article.title %}
+{% assign description = article.description | truncate: 117%}
+
+{% if article.img %}
+    {% assign card_image = article.img %}
+{% else %}
+    {% assign card_image = site.default_card_image_path | relative_url %}
+    {% assign min = 1 %}
+    {% assign max = site.default_card_image_number_of_images %}
+    {% assign now = "now" | date: "%N" %}
+    {% assign randomNumber = now | modulo: max | plus: min %}
+    {% assign card_image = card_image | append: "img" | append: randomNumber | append: ".png" %}
+{% endif %}
+
+<!-- https://getbootstrap.com/docs/4.3/components/card/#horizontal -->
+<div class="card mb-3" onclick="window.open('{{ article.url }}','mywindow');" style="cursor: pointer;">
+    <div class="row g-0">
+      <div class="img-card col-md-4">
+        <img src="{{ card_image }}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ title }}</h5>
+          <div class="card-text">{{ description }}</div>
+        </div>
+      </div>
+    </div>
+</div>
