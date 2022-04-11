@@ -18,14 +18,17 @@ jobs:
       - name: requirements
         run: |
           pip install python-frontmatter
-      - name: generate
+          pip install oyaml
+          pip install requests
+          pip install PyYAML
+      - name: update-counts
         run: |
-          python ./scripts/fetch_instagram_photos.py
+          python ./scripts/read_post_counts.py
       - name: Commit and push if changed
         run: |
           git pull origin main
           git add .
           git config --global user.email "sachinmalhotra1993@gmail.com"
-          git config --global user.name "edorado93"
-          git commit -m "Updated intagram photos"
+          git config --global user.name "edorado93-Github-Action"
+          git commit -m "Updated post counts"
           git push origin main
