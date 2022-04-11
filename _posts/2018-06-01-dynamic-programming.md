@@ -1,20 +1,21 @@
 ---
-title: "Change the signs, a Codechef Problem"
+title: Change the signs, a Codechef Problem
 header:
   overlay_image: /assets/images/dynamic-programming/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Change%20The%20Signs,%20A%20Codechef%20Problem.png
   collection: blog
-excerpt: "How to use dynamic programming to solve a competitive programming question."
+excerpt: How to use dynamic programming to solve a competitive programming question.
 date: June 1, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Dynamic Programming
-  - Recursion
+- Competitive Programming
+- Dynamic Programming
+- Recursion
+applause_count: 0
 ---
 
 If you’re a competitive programmer like I am, one of the best feelings in the world is seeing your program getting accepted on first try on one of the most famous programming platforms, [CodeChef](https://www.codechef.com/).

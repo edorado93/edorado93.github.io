@@ -1,19 +1,20 @@
 ---
-title: "Life Lessons from a 21 years-old"
+title: Life Lessons from a 21 years-old
 header:
   overlay_image: /assets/images/life-lessons-header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Life%20Lessons%20From%20A%20young%20Software%20Engineer.png
   collection: blog
-excerpt: "Lessons learnt by a young Software Engineer."
+excerpt: Lessons learnt by a young Software Engineer.
 date: March 4, 2016
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Life Lessons
-  - Software Engineering
+- Life Lessons
+- Software Engineering
+applause_count: 0
 ---
 
 > Life is a Race! If you don't run fast, someone will crush you and overtake you.

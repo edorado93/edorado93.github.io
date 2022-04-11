@@ -10,7 +10,7 @@
  *  </div>
  */
 
-@mixin notice($notice-color) {
+@mixin notice($notice-color, $notice-border) {
   margin: 2em 0 !important;  /* override*/
   padding: 1em;
   color: $text-color;
@@ -20,6 +20,7 @@
   background-color: mix($background-color, $notice-color, $notice-background-mix);
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
+  border: 2px solid $notice-border;
 
   h4 {
     margin-top: 0 !important; /* override*/
@@ -71,35 +72,35 @@
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($light-gray, $gray);
 }
 
 /* Primary notice */
 
 .notice--primary {
-  @include notice($primary-color);
+  @include notice($primary-color, $primary-border);
 }
 
 /* Info notice */
 
 .notice--info {
-  @include notice($info-color);
+  @include notice($info-color, $info-border);
 }
 
 /* Warning notice */
 
 .notice--warning {
-  @include notice($warning-color);
+  @include notice($warning-color, $warning-border);
 }
 
 /* Success notice */
 
 .notice--success {
-  @include notice($success-color);
+  @include notice($success-color, $success-border);
 }
 
 /* Danger notice */
 
 .notice--danger {
-  @include notice($danger-color);
+  @include notice($danger-color, $danger-border);
 }

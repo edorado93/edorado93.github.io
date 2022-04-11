@@ -1,18 +1,19 @@
 ---
-title: "I need a haircut"
+title: I need a haircut
 header:
   image: /assets/images/haircut/header.png
   og_image: https://og-image.vercel.app/I%20Need%20A%20%Haircut!.png
   collection: blog
-excerpt: "The fear, the anxiety, the anger, the maybe happiness when I get a haircut"
+excerpt: The fear, the anxiety, the anger, the maybe happiness when I get a haircut
 date: May 15, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-    - Random
-    - Haircut Rants
+- Random
+- Haircut Rants
+applause_count: 0
 ---
 
 > "Should I get a haircut?"
@@ -159,5 +160,3 @@ This is me walking out of the barber shop.
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/haircut/img7.jpeg" alt="">
 </figure>
-
-

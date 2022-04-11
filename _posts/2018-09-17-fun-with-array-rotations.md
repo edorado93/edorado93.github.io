@@ -1,19 +1,20 @@
 ---
-title: "Fun with array rotations"
+title: Fun with array rotations
 header:
   overlay_image: /assets/images/array-rotations/header.gif
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Fun%20With%20Array%20Rotations.png
   collection: blog
-excerpt: "Rotate an array, they said. It will be fun, they said."
+excerpt: Rotate an array, they said. It will be fun, they said.
 date: September 17, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Arrays
+- Competitive Programming
+- Arrays
+applause_count: 10
 ---
 
 Arrays are one of the most versatile data structures out there. Arrays form the basis of so many applications and numerous algorithms and data structures are based on them.

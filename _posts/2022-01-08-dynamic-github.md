@@ -1,21 +1,23 @@
 ---
-title: "Building a Dynamic Github profile with Github Actions"
+title: Building a Dynamic Github profile with Github Actions
 header:
   overlay_image: /assets/images/dynamic-github/header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Building%20A%20Dynamic%20Github%20Profile.png
   collection: blog
-excerpt: Show off your Github activity, latest blogs, Spotify streams, and much more with dynamically updating GitHub Profile READMEs!"
+excerpt: Show off your Github activity, latest blogs, Spotify streams, and much more
+  with dynamically updating GitHub Profile READMEs!"
 date: January 08, 2022
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Open Source
-  - Github
-  - Frontend
-  - Github Actions
+- Open Source
+- Github
+- Frontend
+- Github Actions
+applause_count: 1
 ---
 
 Hey y ’all, if you’ve stumbled across this post on Medium, just note that this was _originally_ posted on Hackernoon. If you want to check out the post there, head over to this [link](https://hackernoon.com/how-to-make-a-rockstar-github-profile-readme).

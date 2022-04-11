@@ -1,20 +1,22 @@
 ---
-title: "Load Testing HAProxy (Part 2)"
+title: Load Testing HAProxy (Part 2)
 header:
   overlay_image: /assets/images/haproxy-series/header-p2.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Load%20Testing%20With%20HAProxy%20Part%202.png
   collection: blog
-excerpt: "Part-2 of the 3 part series on breaking the limits of the open-source HAProxy, which is a reliable, high performant TCP/HTTP load balancer."
+excerpt: Part-2 of the 3 part series on breaking the limits of the open-source HAProxy,
+  which is a reliable, high performant TCP/HTTP load balancer.
 date: March 26, 2017
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Load Balancing
-  - HAProxy
-  - Stress Testing
+- Load Balancing
+- HAProxy
+- Stress Testing
+applause_count: 0
 ---
 
 This is the second part in the 3 part series on performance testing of the famous TCP load balancer and reverse proxy, HAProxy. If you haven’t gone through the previous post, I would highly suggest you do so to get some sort of context.

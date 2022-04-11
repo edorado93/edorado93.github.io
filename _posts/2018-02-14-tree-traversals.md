@@ -1,20 +1,21 @@
 ---
-title: "Tree Traversals explained"
+title: Tree Traversals explained
 header:
   overlay_image: /assets/images/tree-traversals/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Tree%20Traversals.png
   collection: blog
-excerpt: "A class of lazy students trying to cheat on their exam."
+excerpt: A class of lazy students trying to cheat on their exam.
 date: February 2, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-    - Competitive Programming
-    - Graphs
-    - Traversal Algorithms
+- Competitive Programming
+- Graphs
+- Traversal Algorithms
+applause_count: 0
 ---
 
 Imagine that you are enrolled in a math class at one of the most prestigious universities of the world.

@@ -1,20 +1,22 @@
 ---
-title: "Deep Dive Into Graph Traversals"
+title: Deep Dive Into Graph Traversals
 header:
   overlay_image: /assets/images/deep-dive-graph-traversals/img1.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Load%20Testing%20With%20HAProxy%20Part%201.png
   collection: blog
-excerpt: "An overview of the famous Depth-First Search and Breadth-First Search algorithms and their differences and use cases."
+excerpt: An overview of the famous Depth-First Search and Breadth-First Search algorithms
+  and their differences and use cases.
 date: December 10, 2017
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Graphs
-  - Traversal Algorithms
+- Competitive Programming
+- Graphs
+- Traversal Algorithms
+applause_count: 0
 ---
 
 There are over 2.07 billion monthly active Facebook Users worldwide as of Q3 2017. The most important aspect of the Facebook network is the social engagement between users. The more friends a user has, the more engaging the conversations become via comments on posts, messaging etc. If you've used Facebook fairly regularly, you must be knowing about the Friends Recommendation feature.

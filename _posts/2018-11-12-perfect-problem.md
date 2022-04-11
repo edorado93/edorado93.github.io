@@ -1,19 +1,20 @@
 ---
-title: "The Perfect Programming Interview Problem"
+title: The Perfect Programming Interview Problem
 header:
   overlay_image: /assets/images/perfect-problem/header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/The%20Perfect%20Programming%20Interview%20Problem.png
   collection: blog
-excerpt: "Is there such a thing as a perfect programming problem? Let's find out"
+excerpt: Is there such a thing as a perfect programming problem? Let's find out
 date: November 12, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Arrays
+- Competitive Programming
+- Arrays
+applause_count: 0
 ---
 
 Telephone screening interviews are a bit easier than the traditional onsite whiteboard interviews. The whiteboard interviews involve a whole lot of pressure and anxiety due to the lack of a code editor to code on. The thing that these interviews do have in common is the kind of skills they test.
