@@ -1,20 +1,22 @@
 ---
-title: "Unmasking Bitmasked Dynamic Programming"
+title: Unmasking Bitmasked Dynamic Programming
 header:
   overlay_image: /assets/images/unmasking-dynamic/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Unmasking%20Bitmask%20Dynamic%20Programming.png
   collection: blog
-excerpt: "Dynamic Programming and what now? Go from fearing these two major concepts to conquering them!"
+excerpt: Dynamic Programming and what now? Go from fearing these two major concepts
+  to conquering them!
 date: January 03, 2019
-collection: travel
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Bit Masking
+- Competitive Programming
+- Bit Masking
+collection: travel
+applause_count: 9
 ---
 
 > There are no coincidences in this world.

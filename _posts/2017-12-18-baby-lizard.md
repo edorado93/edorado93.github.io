@@ -1,20 +1,22 @@
 ---
-title: "How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem"
+title: How to solve the Baby Lizards Problem — a fun twist on the N-Queens problem
 header:
   overlay_image: /assets/images/baby-lizard/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Solving%20The%20Baby%20Lizard%20Problem.png
   collection: blog
-excerpt: "Using graph traversals and some tricks to approach a subtle twist on a classic backtracking problem."
+excerpt: Using graph traversals and some tricks to approach a subtle twist on a classic
+  backtracking problem.
 date: December 18, 2017
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-    - Competitive Programming
-    - Graphs
-    - Traversal Algorithms
+- Competitive Programming
+- Graphs
+- Traversal Algorithms
+applause_count: 0
 ---
 
 This problem statement was an assignment as a part of my coursework for the Masters program at USC. I had loads of fun while solving it and I decided to share my learnings with the community.

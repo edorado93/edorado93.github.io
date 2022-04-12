@@ -1,19 +1,20 @@
 ---
-title: "Recursion Demystified"
+title: Recursion Demystified
 header:
   overlay_image: /assets/images/recursion-de/header.png
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Change%20The%20Signs,%20A%20Codechef%20Problem.png
   collection: blog
-excerpt: "In order to understand recursion, you must first understand recursion."
+excerpt: In order to understand recursion, you must first understand recursion.
 date: July 12, 2018
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Competitive Programming
-  - Recursion
+- Competitive Programming
+- Recursion
+applause_count: 0
 ---
 
 Crazy, isn’t it ?

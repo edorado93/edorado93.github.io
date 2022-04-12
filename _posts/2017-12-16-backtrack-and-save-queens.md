@@ -1,20 +1,21 @@
 ---
-title: "Let's Backtrack And Save Some Queens"
+title: Let's Backtrack And Save Some Queens
 header:
   overlay_image: /assets/images/queens/header.jfif
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Backtrack%20And%20Save%20Some%20Queens.png
   collection: blog
-excerpt: "Let's take a look at solving this classical backtracking problem."
+excerpt: Let's take a look at solving this classical backtracking problem.
 date: December 16, 2017
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-    - Competitive Programming
-    - Graphs
-    - Traversal Algorithms
+- Competitive Programming
+- Graphs
+- Traversal Algorithms
+applause_count: 0
 ---
 
 That's a weird looking title, that probably doesn't make sense right now. But trust me, this is a pretty long post and is really fun!

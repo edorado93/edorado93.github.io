@@ -27,5 +27,15 @@
         {% endif %}
       </span>
     {% endif %}
+
+    {% if document.show_date and document.applause_count > 0 %}<span class="page__meta-sep"></span>{% endif %}
+
+    {% if document.applause_count > 0 %}
+      <span class="page__meta-readtime">
+        <i class="fas fa-heart" aria-hidden="true"></i>
+        {{ document.applause_count }}
+      </span>
+    {% endif %}
+
   </p>
 {% endif %}

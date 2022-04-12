@@ -1,20 +1,22 @@
 ---
-title: "How we fine-tuned HAProxy to achieve 2,000,000 concurrent SSL connections"
+title: How we fine-tuned HAProxy to achieve 2,000,000 concurrent SSL connections
 header:
   overlay_image: /assets/images/haproxy-series/header-p3.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Fine%20Tuning%20HAProxy%20To%2%20mil%20connections.png
   collection: blog
-excerpt: "Read on to find out all the tweaks we did to extract those teeny tiny bits of performance from a reliable and highly used load balancer."
+excerpt: Read on to find out all the tweaks we did to extract those teeny tiny bits
+  of performance from a reliable and highly used load balancer.
 date: April 16, 2017
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Load Balancing
-  - HAProxy
-  - Stress Testing
+- Load Balancing
+- HAProxy
+- Stress Testing
+applause_count: 0
 ---
 
 There are two important pieces of information we'll start off with:

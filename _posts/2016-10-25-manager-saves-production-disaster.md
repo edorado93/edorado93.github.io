@@ -1,19 +1,21 @@
 ---
-title: "Manager to the rescue!"
+title: Manager to the rescue!
 header:
   overlay_image: /assets/images/production-header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Phew!%20I%20almost%20broke%20production.png
   collection: blog
-excerpt: "How my manager saved me from breaking 50 production servers. A retrospective on a potential screw-up on our production system due to a bad piece of code."
+excerpt: How my manager saved me from breaking 50 production servers. A retrospective
+  on a potential screw-up on our production system due to a bad piece of code.
 date: October 25, 2016
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Software Engineering
-  - Production Clusterfucks
+- Software Engineering
+- Production Clusterfucks
+applause_count: 0
 ---
 
 ## Backdrop

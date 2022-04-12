@@ -1,19 +1,21 @@
 ---
-title: "Into the Abyss — Crater Lake, a travelogue!"
+title: Into the Abyss — Crater Lake, a travelogue!
 header:
   overlay_image: /assets/images/travel/crater-lake/header.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Crater%20Lake,%20Into%20The%20Abyss.png
   collection: travel
-excerpt: "A travelouge and rant about my road trip from Seattle, Washington to the beautiful Crater Lake in Portland."
+excerpt: A travelouge and rant about my road trip from Seattle, Washington to the
+  beautiful Crater Lake in Portland.
 date: January 1, 2022
 show_date: true
 toc: true
-toc_label: "Content"
+toc_label: Content
 toc_sticky: true
 tags:
-  - Road Trip
-  - Travelogue
+- Road Trip
+- Travelogue
+applause_count: 0
 ---
 
 > Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover. 
