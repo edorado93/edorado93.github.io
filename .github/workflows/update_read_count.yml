@@ -1,7 +1,7 @@
 name: Update read count for all posts
 on:
   schedule: # Run workflow automatically
-    - cron: '0 0 * * *' # Runs every day at midnight
+    - cron: '0 2 * * *' # Runs every day at midnight at 2 a.m.
   workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 
 jobs:
@@ -31,4 +31,11 @@ jobs:
           git config --global user.email "sachinmalhotra1993@gmail.com"
           git config --global user.name "edorado93-Github-Action"
           git commit -m "Updated post counts"
-          git push origin main
+          git push origin master
+      - name: Merge master into gh-pages
+        run: |
+          git fetch --unshallow
+          git checkout gh-pages
+          git pull
+          git merge --no-ff master -m "Auto-merge master back to gh-pages"
+          git push
