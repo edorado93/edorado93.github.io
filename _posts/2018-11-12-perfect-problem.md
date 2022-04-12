@@ -14,7 +14,7 @@ toc_sticky: true
 tags:
 - Competitive Programming
 - Arrays
-applause_count: 0
+applause_count: 1
 ---
 
 Telephone screening interviews are a bit easier than the traditional onsite whiteboard interviews. The whiteboard interviews involve a whole lot of pressure and anxiety due to the lack of a code editor to code on. The thing that these interviews do have in common is the kind of skills they test.
