@@ -24,7 +24,21 @@ jobs:
       - name: update-counts
         run: |
           python ./scripts/read_post_counts.py
+      - shell: pwsh
+        # Give an id to the step, so we can reference it later
+        id: check_file_changed
+        run: |
+          # Diff HEAD with the previous commit
+          $diff = git diff --name-only HEAD^ HEAD
+
+          # Check if a file under docs/ or with the .md extension has changed (added, modified, deleted)
+          $SourceDiff = $diff | Where-Object { $_ -match '^docs/' -or $_ -match '.md$' }
+          $HasDiff = $SourceDiff.Length -gt 0
+
+          # Set the output named "docs_changed"
+          Write-Host "::set-output name=docs_changed::$HasDiff"
       - name: Commit and push if changed
+        if: steps.check_file_changed.outputs.docs_changed == 'True'
         run: |
           git pull origin master
           git add .
@@ -33,6 +47,7 @@ jobs:
           git commit -m "Updated post counts"
           git push origin master
       - name: Merge master into gh-pages
+        if: steps.check_file_changed.outputs.docs_changed == 'True'
         run: |
           git fetch --unshallow
           git checkout gh-pages
