@@ -26,7 +26,7 @@ jobs:
           python ./scripts/read_post_counts.py
       - name: Commit and push if changed
         run: |
-          git pull origin main
+          git pull origin master
           git add .
           git config --global user.email "sachinmalhotra1993@gmail.com"
           git config --global user.name "edorado93-Github-Action"
