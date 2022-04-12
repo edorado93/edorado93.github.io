@@ -4,6 +4,7 @@ name: Refresh
 on:
   schedule:
     - cron:  '0 3 * * *' # Runs every day at 3am
+  workflow_dispatch: # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
 
 jobs:
   refresh:
