@@ -43,5 +43,5 @@ This is an attempt to not *just* be another tech blog. This is a collection of a
 Do head over to the blog section to scroll through a chronological ordering of articles. If you're curious about yours truly (ahem!), head over to the about section instead.
 
 <figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/intro-blog/mario.gif" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/intro-blog/mario.gif" style="width:50%;" alt="">
 </figure>
