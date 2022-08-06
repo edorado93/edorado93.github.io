@@ -1,7 +1,7 @@
 ---
 title: Life of a Software Engineer at Microsoft
 header:
-  overlay_image: /assets/images/dynamic-github/header.jpeg
+  overlay_image: https://cdn.hashnode.com/res/hashnode/image/unsplash/_g1WdcKcV3w/upload/v1655962322241/cldNadbMg.jpeg
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Life%20of%20a%20Software%20Engineer%20at%20Microsoft.png
   collection: blog
