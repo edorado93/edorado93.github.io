@@ -50,18 +50,14 @@ Here are some of my favorite bubble-tea stalls in Seattle. Do check them out if 
 
 ## work 🍩
 
-It doesn't get any better than Python, does it? It's my go-to language for everything except my day-to-day at Microsoft (LOL).
+Until a couple of months ago I was working at Microsoft, building the authoritative DNS service. Then, I made a switch which is almost akin to a leap-of-faith move for me. It's been a blast ever since!
 
-I'm working as a Software Developer in the DNS team at Microsoft. Here's a brief introduction to DNS if you need one. 
+I'm responsible for handling the entire MLOps pipeline for the Computer Vision team over at Etsy! Python, Python, and loads of Python! It's the perfect intersection of Software Engineering and Machine Learning which is something I used to crave ever since I graduated! Interested in reading more about my journey at Microsoft? (the one at Etsy is just getting startd ;), read [this post](https://www.bruteforced.dev/microsoft-retrospective/) I recently published!
 
-<figure class="align-center">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/intro-blog/dns.png" alt="">
-  <figcaption><a href="https://wizardzines.com/">Wizard Zines</a></figcaption>
-</figure>
 
 ## travel 🌎
 
-COVID and Travel haven't really gone well together. After getting vaccinated (gratefuul for them!), some avenues for travel did open up in 2021 and I was lucky enough to travel to a couple of countries this year. Here are some of the photos from my escapades.
+COVID and Travel haven't really gone well together. After getting vaccinated (gratefuul for them!), a lot of avenues for travel did open up and I was lucky enough to travel to a couple of countries this past year. Here are some of the photos from my escapades.
 
 {% include gallery id="photography_gallery" layout="half" caption="Some of the photos from my recent travels to (guess?)." %}
 
