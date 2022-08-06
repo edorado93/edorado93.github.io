@@ -6,7 +6,7 @@ header:
   og_image: https://og-image.vercel.app/Building%20A%20Dynamic%20Github%20Profile.png
   collection: blog
 excerpt: Show off your Github activity, latest blogs, Spotify streams, and much more
-  with dynamically updating GitHub Profile READMEs!"
+  with dynamically updating GitHub Profile READMEs!
 date: January 08, 2022
 show_date: true
 toc: true
