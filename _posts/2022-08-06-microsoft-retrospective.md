@@ -5,7 +5,8 @@ header:
   overlay_filter: 0.5
   og_image: https://og-image.vercel.app/Life%20of%20a%20Software%20Engineer%20at%20Microsoft.png
   collection: blog
-excerpt: A retrospective of my time as a software engineer in the Azure DNS team at Microsoft.
+excerpt: A retrospective of my time as a software engineer in the Azure DNS team at
+  Microsoft.
 date: August 06, 2022
 show_date: true
 toc: true
@@ -15,7 +16,7 @@ tags:
 - Software Engineering
 - Interviews
 - Retrospective
-applause_count: 5
+applause_count: 0
 ---
 
 Back in 2019, a few months before joining Microsoft, one of my daily activities used to be searching "a day in the life of" videos on Youtube. I was obsessed with how the Microsoft campus looked and what the NEO (new employee orientation) entailed.
