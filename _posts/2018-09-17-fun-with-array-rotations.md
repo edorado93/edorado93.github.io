@@ -14,7 +14,7 @@ toc_sticky: true
 tags:
 - Competitive Programming
 - Arrays
-applause_count: 10
+applause_count: 20
 ---
 
 Arrays are one of the most versatile data structures out there. Arrays form the basis of so many applications and numerous algorithms and data structures are based on them.

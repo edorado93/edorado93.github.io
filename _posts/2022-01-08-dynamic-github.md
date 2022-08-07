@@ -17,7 +17,7 @@ tags:
 - Github
 - Frontend
 - Github Actions
-applause_count: 1
+applause_count: 11
 ---
 
 Hey y ’all, if you’ve stumbled across this post on Medium, just note that this was _originally_ posted on Hackernoon. If you want to check out the post there, head over to this [link](https://hackernoon.com/how-to-make-a-rockstar-github-profile-readme).
